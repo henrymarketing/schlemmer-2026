@@ -1,0 +1,80 @@
+{
+  "nav": {
+    "workAndLife": "Oskar Schlemmer: Werk und Leben",
+    "triadicBallet": "Das Triadische Ballett",
+    "catalogueRaisonne": "Catalogue Raisonné",
+    "jainaSchlemmer": "Jaïna Schlemmer",
+    "cramanSchlemmer": "C. Raman Schlemmer",
+    "communique": "Communiqué",
+    "authentication": "Authentifizierung",
+    "friends": "Freunde",
+    "features": "Features",
+    "weRemember": "In Memoriam",
+    "imprint": "Impressum",
+    "close": "Schließen",
+    "open": "Menü"
+  },
+  "footer": {
+    "copyright": "© 2026 C. Raman Schlemmer ® Alle Rechte vorbehalten.",
+    "imprint": "Impressum"
+  },
+  "authentication": {
+    "title": "Authentifizierung",
+    "intro": "Bitte füllen Sie das Antragsformular aus, um Ihre Anfrage zu spezifizieren.",
+    "firstName": "Vorname",
+    "lastName": "Nachname",
+    "email": "E-Mail",
+    "phone": "Telefon",
+    "institution": "Institution",
+    "street": "Straße",
+    "city": "Stadt",
+    "zip": "PLZ",
+    "country": "Land",
+    "reference": "Referenz",
+    "website": "Website",
+    "requestType": "Art der Anfrage",
+    "categories": "Kategorie der Anfrage",
+    "declaration": "Ich bestätige, dass die gemachten Angaben korrekt sind.",
+    "submit": "Absenden",
+    "success": "Ihre Anfrage wurde übermittelt. Wir werden uns melden.",
+    "error": "Ein Fehler ist aufgetreten. Bitte versuchen Sie es erneut.",
+    "cat_authentication": "Authentifizierungsantrag",
+    "cat_reproduction": "Reproduktions- / Publikationsantrag",
+    "cat_provenance": "Provenienzforschung",
+    "cat_artmarket": "Kunstmarkt",
+    "cat_academia": "Wissenschaft",
+    "cat_media": "Medien",
+    "cat_trademark": "Markenanfrage"
+  },
+  "catalogue": {
+    "filter": "Filter",
+    "category": "Kategorie",
+    "year": "Jahr",
+    "medium": "Medium",
+    "allCategories": "Alle Kategorien",
+    "noResults": "Keine Werke gefunden.",
+    "viewDetail": "Details",
+    "relatedWorks": "Verwandte Werke",
+    "exhibitions": "Ausstellungen",
+    "literature": "Literatur",
+    "provenance": "Provenienz"
+  },
+  "search": {
+    "placeholder": "Archiv durchsuchen…",
+    "noResults": "Keine Ergebnisse für diese Suchanfrage.",
+    "results": "{count} Ergebnisse"
+  },
+  "features": {
+    "readMore": "Weiterlesen",
+    "by": "Von"
+  },
+  "communique": {
+    "title": "Communiqué"
+  },
+  "weRemember": {
+    "title": "In Memoriam"
+  },
+  "friends": {
+    "title": "Freunde"
+  }
+}

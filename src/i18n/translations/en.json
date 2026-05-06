@@ -1,0 +1,80 @@
+{
+  "nav": {
+    "workAndLife": "Oskar Schlemmer: Work and Life",
+    "triadicBallet": "The Triadic Ballet",
+    "catalogueRaisonne": "Catalogue Raisonné",
+    "jainaSchlemmer": "Jaïna Schlemmer",
+    "cramanSchlemmer": "C. Raman Schlemmer",
+    "communique": "Communiqué",
+    "authentication": "Authentication",
+    "friends": "Friends",
+    "features": "Features",
+    "weRemember": "We Remember",
+    "imprint": "Imprint",
+    "close": "Close",
+    "open": "Menu"
+  },
+  "footer": {
+    "copyright": "© 2026 C. Raman Schlemmer ® All Rights Reserved.",
+    "imprint": "Imprint"
+  },
+  "authentication": {
+    "title": "Authentication",
+    "intro": "Please fill out the application form to specify your request.",
+    "firstName": "First Name",
+    "lastName": "Last Name",
+    "email": "Email",
+    "phone": "Telephone",
+    "institution": "Institution",
+    "street": "Street",
+    "city": "City",
+    "zip": "Zip / Postal Code",
+    "country": "Country",
+    "reference": "Reference",
+    "website": "Website",
+    "requestType": "Type of Request",
+    "categories": "Request Category",
+    "declaration": "I declare that the information provided is accurate.",
+    "submit": "Submit",
+    "success": "Your request has been submitted. We will be in touch.",
+    "error": "An error occurred. Please try again.",
+    "cat_authentication": "Authentication Application",
+    "cat_reproduction": "Reproduction / Publication Application",
+    "cat_provenance": "Provenance Research",
+    "cat_artmarket": "Art Market",
+    "cat_academia": "Academia",
+    "cat_media": "Media",
+    "cat_trademark": "Trademark Request"
+  },
+  "catalogue": {
+    "filter": "Filter",
+    "category": "Category",
+    "year": "Year",
+    "medium": "Medium",
+    "allCategories": "All Categories",
+    "noResults": "No artworks found.",
+    "viewDetail": "View detail",
+    "relatedWorks": "Related Works",
+    "exhibitions": "Exhibitions",
+    "literature": "Literature",
+    "provenance": "Provenance"
+  },
+  "search": {
+    "placeholder": "Search the archive…",
+    "noResults": "No results for this query.",
+    "results": "{count} results"
+  },
+  "features": {
+    "readMore": "Read more",
+    "by": "By"
+  },
+  "communique": {
+    "title": "Communiqué"
+  },
+  "weRemember": {
+    "title": "We Remember"
+  },
+  "friends": {
+    "title": "Friends"
+  }
+}
