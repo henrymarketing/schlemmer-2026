@@ -4,6 +4,7 @@ import { postgresAdapter } from '@payloadcms/db-postgres'
 import { lexicalEditor } from '@payloadcms/richtext-lexical'
 import { seoPlugin } from '@payloadcms/plugin-seo'
 import { redirectsPlugin } from '@payloadcms/plugin-redirects'
+import { vercelBlobStorage } from '@payloadcms/storage-vercel-blob'
 import sharp from 'sharp'
 
 import { Users } from './collections/Users'
@@ -56,6 +57,11 @@ export default buildConfig({
     fallback: true,
   },
   plugins: [
+    vercelBlobStorage({
+      enabled: !!process.env.BLOB_READ_WRITE_TOKEN,
+      token: process.env.BLOB_READ_WRITE_TOKEN ?? '',
+      collections: { media: true },
+    }),
     seoPlugin({
       collections: ['pages', 'artworks', 'features', 'communiques', 'people'],
       globals: ['settings'],
