@@ -32,7 +32,7 @@
       },
       {
         "src": "/images/Annabelle-Selldorf-at-Fondation-Beyeler.png",
-        "alt": "Theodora Vischer with Annabelle Selldorf ",
+        "alt": "Annabelle Selldorf at Fondation Beyeler, Basel",
         "width": "400"
       }
     ],
@@ -83,7 +83,7 @@
         "src": "/images/Raman-Schlemmer-with-artwork-to-breath-mandala-by-KimSooja.jpg",
         "srcset": "/images/Raman-Schlemmer-with-artwork-to-breath-mandala-by-KimSooja-p-500.jpg 500w, /images/Raman-Schlemmer-with-artwork-to-breath-mandala-by-KimSooja.jpg 679w",
         "sizes": "(max-width: 479px) 90vw, (max-width: 767px) 77vw, 400px",
-        "alt": "Artist Wolfgang Laib next to his installation at the Galleria Lia Rumma",
+        "alt": "C. Raman Schlemmer with KimSooja's \"To Breathe — Mandala\" installation, Humboldt Forum Berlin",
         "width": "400"
       }
     ],
@@ -97,7 +97,7 @@
         "src": "/images/Kunstmuseum-Basel.png",
         "srcset": "/images/Kunstmuseum-Basel-p-500.png 500w, /images/Kunstmuseum-Basel.png 600w",
         "sizes": "(max-width: 479px) 90vw, (max-width: 767px) 77vw, 400px",
-        "alt": "Artist Wolfgang Laib next to his installation at the Galleria Lia Rumma",
+        "alt": "Kunstmuseum Basel",
         "width": "400"
       }
     ],
@@ -112,7 +112,7 @@
         "src": "/images/Charlemagne-Palestine-FRAC-Selestat-2022.png",
         "srcset": "/images/Charlemagne-Palestine-FRAC-Selestat-2022-p-500.png 500w, /images/Charlemagne-Palestine-FRAC-Selestat-2022.png 600w",
         "sizes": "(max-width: 479px) 90vw, (max-width: 767px) 77vw, 400px",
-        "alt": "Artist Wolfgang Laib next to his installation at the Galleria Lia Rumma",
+        "alt": "Charlemagne Palestine at FRAC Sélestat, 2022",
         "width": "400"
       }
     ],
@@ -170,7 +170,7 @@
         "src": "/images/raman-schlemmer-el-greco.png",
         "srcset": "/images/raman-schlemmer-el-greco-p-500.png 500w, /images/raman-schlemmer-el-greco-p-800.png 800w, /images/raman-schlemmer-el-greco.png 900w",
         "sizes": "(max-width: 479px) 90vw, (max-width: 767px) 77vw, 400px",
-        "alt": "C. Raman Schlemmer next to a landscape painting by Thomas Huber",
+        "alt": "C. Raman Schlemmer at the El Greco exhibition, Palazzo Reale, Milan",
         "caption": "C. Raman Schlemmer with \"San Sebastian\" (1577–1578)  by El Greco",
         "width": "400"
       }
@@ -190,7 +190,7 @@
         "src": "/images/Picasso-Sculptur-matter-and-body-Minister-Culture-Spain-Miquel-Iceta.png",
         "srcset": "/images/Picasso-Sculptur-matter-and-body-Minister-Culture-Spain-Miquel-Iceta-p-500.png 500w, /images/Picasso-Sculptur-matter-and-body-Minister-Culture-Spain-Miquel-Iceta.png 666w",
         "sizes": "(max-width: 479px) 90vw, (max-width: 767px) 77vw, 400px",
-        "alt": "C. Raman Schlemmer next to a landscape painting by Thomas Huber",
+        "alt": "Picasso Sculptor — Matter and Body exhibition, Guggenheim Bilbao, with Minister of Culture Spain Miquel Iceta",
         "caption": "Carmen Giminez with Minister Culture Spain Miquel Iceta",
         "width": "400"
       }
@@ -210,7 +210,7 @@
         "src": "/images/Thomas-Huber.-Lago-Maggiore-LAC.jpg",
         "srcset": "/images/Thomas-Huber.-Lago-Maggiore-LAC-p-500.jpg 500w, /images/Thomas-Huber.-Lago-Maggiore-LAC-p-800.jpg 800w, /images/Thomas-Huber.-Lago-Maggiore-LAC.jpg 862w",
         "sizes": "(max-width: 479px) 90vw, (max-width: 767px) 77vw, 400px",
-        "alt": "C. Raman Schlemmer next to a landscape painting by Thomas Huber",
+        "alt": "Thomas Huber, \"Lago Maggiore\", LAC Lugano",
         "caption": "Thomas Huber and C. Raman Schlemmer studied at the art school Basel; their teacher was the Swiss artist Franz Fedie",
         "width": "400"
       }
@@ -261,14 +261,14 @@
         "src": "/images/Analivia-Cordeiro-ZKM.png",
         "srcset": "/images/Analivia-Cordeiro-ZKM-p-500.png 500w, /images/Analivia-Cordeiro-ZKM.png 750w",
         "sizes": "(max-width: 479px) 90vw, (max-width: 767px) 77vw, 400px",
-        "alt": "C. Raman Schlemmer next to a painting by El Greco at the Kunstmuseum in Basel",
+        "alt": "Analivia Cordeiro at ZKM | Center for Art and Media, Karlsruhe",
         "width": "400"
       },
       {
         "src": "/images/Analivia-Cordeiro-Raman-Schlemmer.png",
         "srcset": "/images/Analivia-Cordeiro-Raman-Schlemmer-p-500.png 500w, /images/Analivia-Cordeiro-Raman-Schlemmer.png 513w",
         "sizes": "(max-width: 479px) 90vw, (max-width: 767px) 77vw, 400px",
-        "alt": "C. Raman Schlemmer next to a painting by El Greco at the Kunstmuseum in Basel",
+        "alt": "Analivia Cordeiro with C. Raman Schlemmer",
         "width": "400"
       }
     ],

@@ -1,37 +1,109 @@
 [
   {
     "titleHtml": "<p class=\"schlemmer-text news\"><span class=\"highlight\">Frank Gehry<br>‍</span>28 February, 1929 - 5 December, 2025 <br>‍<strong>‍</strong><br>At the beginning of 2020, Gehry, then 91, designed an installation of six figurines for&nbsp;“The Triadic Ballet”&nbsp;by Oskar Schlemmer in the LA Phil Walt Disney Concert Hall, Los Angeles, a building of his own design, opend in 2003. Curated by Stephanie Barron and realized by C. Raman Schlemmer, it stands as the most spectacular presentation of this avant-garde work from 1922. The lighting, developed by C. Raman Schlemmer from a concept by Arnold Chan of Isometrix, London, transformed the figures, allowing their forms and colours to engage with Gehry’s sweeping curves and soaring spaces. Presented as part of the festival&nbsp;“Weimar Variations”, conceived by composer and LA Phil Conductor Laureate Esa-Pekka Salonen, Gehry and C. Raman Schlemmer attended all the concerts in the series, while thousands of visitors encountered Schlemmer’s figurines in the grandeur of the concert hall spaces rather than a traditional museum context. In this extraordinary setting, the timeless work’s sculptural and architectural essence emerged with striking clarity, each figure poised between stillness and movement, light and shadow, inviting a quiet, almost contemplative immersion in space, form, and colour.<br>‍<br>C. Raman Schlemmer remembers: 'My first encounters with Gehry’s work date back to 1977, during my stay in Los Angeles. At that time, Robert Rauschenberg was working on a new series of prints at the Gemini Editions workshops. He worked at night, and Ayn and Stanley Grinstein, together with Gemini’s stylish partner Sidney Felsen — always wearing a Panama hat — asked whether I might spend some time with Rauschenberg while he was working. So I would interrupt my nightly club tour, stopping by to watch him create. The Gemini building on Melrose Avenue — one of Gehry’s earliest architectural statements — already embodied his experimental approach, with its characteristic use of plywood and raw industrial materials, emblematic of Southern California’s radical architectural language of the period. Experiencing this construction offered an early insight into Gehry’s spatial thinking, long before his later monumental projects. Gehry reengaged these dynamic structures in his intricate installation of dynamically interlocked plywood pedestals for&nbsp;“The Triadic Ballet”&nbsp;for the LA Phil in 2020, where they unfolded as an architectural choreography of form and space.<br>‍<br>In 2019, I was invited to join to celebrate Frank Gehry’s 90th birthday with a concert followed by a dinner in the “Pierre Boulez Saal”, a “salle module”, hall he had designed himself, opened in 2017 as a gift to his friend Daniel Barenboim as part of the Barenboim–Said Akademie, Deutsche Staatsoper, Berlin.<br>‍<br>Among Gehry’s most transformative works is the Guggenheim Museum in Bilbao. It was Carmen Giménez who first proposed the idea of establishing a Guggenheim Museum in what was then a severely depressed region of the Basque Country in northern Spain.<br>‍<br>The opening dinner in 1997, attended by 900 seated guests in the vast hall where Richard Serra’s monumental works since are installed, took place on my birthday, 18 October, in the presence of Their Majesties the King and Queen of Spain, Juan Carlos and Sofía, together with contemporary artists, Francesco Clemente, Julian Schnabel, the actress Alba Clemente et al.<br>‍<br>In 2022 I returned for the 25 years gala dinner celebration of the Guggenheim Museum in Bilbao, and enjoyed breakfast with Gehry the next morning, before he (93) continued to Berlin and Abu Dhabi.'<br><br>Photo: © C. Raman Schlemmer <br><br>‍<br></p>",
-    "images": [],
+    "images": [
+      {
+        "src": "/images/Frank-Gehry-with-Raman-Schlemmer.png",
+        "alt": "Frank Gehry with C. Raman Schlemmer",
+        "srcset": "/images/Frank-Gehry-with-Raman-Schlemmer-p-500.png 500w, /images/Frank-Gehry-with-Raman-Schlemmer-p-800.png 800w, /images/Frank-Gehry-with-Raman-Schlemmer.png 1080w",
+        "sizes": "(max-width: 767px) 100vw, 50vw"
+      },
+      {
+        "src": "/images/Frank-Gehry-on-his-90th-birthday-with-Daniel-Barenboim-Berlin-28-February-2019.png",
+        "alt": "Frank Gehry on his 90th birthday with Daniel Barenboim, Berlin, 28 February 2019",
+        "srcset": "/images/Frank-Gehry-on-his-90th-birthday-with-Daniel-Barenboim-Berlin-28-February-2019-p-500.png 500w, /images/Frank-Gehry-on-his-90th-birthday-with-Daniel-Barenboim-Berlin-28-February-2019-p-800.png 800w, /images/Frank-Gehry-on-his-90th-birthday-with-Daniel-Barenboim-Berlin-28-February-2019.png 1080w",
+        "sizes": "(max-width: 767px) 100vw, 50vw"
+      }
+    ],
     "bodyHtml": "",
     "detailLinks": []
   },
   {
     "titleHtml": "<p class=\"schlemmer-text news\"><span class=\"highlight\">Names and Links:&nbsp;</span>‍<br><a href=\"https://www.laphil.com/concerts-and-events/the-weimar-republic-festival-19-20\" target=\"_blank\" class=\"schlemmer-link\">Los Angeles Walt Disney Concert Hall</a><br></p>",
-    "images": [],
+    "images": [
+      {
+        "src": "/images/The-Triadic-Ballet-by-Oskar-Schlemmer-LA-Phil-Walt-Disney-Concert-Hall-Los-Angeles-daytime-2020.png",
+        "alt": "The Triadic Ballet by Oskar Schlemmer at LA Phil Walt Disney Concert Hall, Los Angeles, 2020",
+        "srcset": "/images/The-Triadic-Ballet-by-Oskar-Schlemmer-LA-Phil-Walt-Disney-Concert-Hall-Los-Angeles-daytime-2020-p-500.png 500w, /images/The-Triadic-Ballet-by-Oskar-Schlemmer-LA-Phil-Walt-Disney-Concert-Hall-Los-Angeles-daytime-2020-p-800.png 800w, /images/The-Triadic-Ballet-by-Oskar-Schlemmer-LA-Phil-Walt-Disney-Concert-Hall-Los-Angeles-daytime-2020.png 1080w",
+        "sizes": "(max-width: 767px) 100vw, 50vw"
+      },
+      {
+        "src": "/images/The-Triadic-Ballet-by-Oskar-Schlemmer-LA-Phil-Walt-Disney-Concert-Hall-Los-Angeles.png",
+        "alt": "The Triadic Ballet figurines by Oskar Schlemmer installed at LA Phil Walt Disney Concert Hall",
+        "srcset": "/images/The-Triadic-Ballet-by-Oskar-Schlemmer-LA-Phil-Walt-Disney-Concert-Hall-Los-Angeles-p-500.png 500w, /images/The-Triadic-Ballet-by-Oskar-Schlemmer-LA-Phil-Walt-Disney-Concert-Hall-Los-Angeles-p-800.png 800w, /images/The-Triadic-Ballet-by-Oskar-Schlemmer-LA-Phil-Walt-Disney-Concert-Hall-Los-Angeles.png 1080w",
+        "sizes": "(max-width: 767px) 100vw, 50vw"
+      }
+    ],
     "bodyHtml": "",
     "detailLinks": []
   },
   {
     "titleHtml": "<p class=\"schlemmer-text news\"><span class=\"highlight\">Robert Wilson<br>‍</span>4 October 1941 - 31 July 2025<br>‍<strong>‍</strong><br>On my first evening on my first visit to Los Angeles and the US, I attended the Los Angeles premiere of “I Was Sitting on My Patio This Guy Appeared I Thought I Was Hallucinating”, 1977. After the performance my friends Dagny and Jim Corcoran invited me to dinner with Lucinda Childs and Robert Wilson. Since then, I have been friends with Bob Wilson and Lucinda Childs.<br>‍<br>I remembered my mother Jaïna’s sister, the actress Karin Schlemmer, telling me about her profound impressions seeing the year before the world premiere of “Einstein on the Beach” at the Festival d’Avignon in France. Wilson had cast the teenager Christopher Knowles in “Einstein on the Beach” and his repetitive, enumerating texts, at the threshold to the subconscious, became part of the production, as well of other performances, such as two- hander, Wilson and Knowles, “DiaLog”, which I attended in Paris. When living in New York the poet and artist Christopher Knowles became a friend and I acquired some of his visual poetry “Typings” for our performance collection when working with the Holly Solomon Gallery.<br>‍<br>Wilson has had a profound influence on stage art in the latter half of the twentieth century with a range of media, dance, movement, lighting, sculpture (furniture in “I Was Sitting on My Patio This Guy Appeared I Thought I Was Hallucinating”), costume, music, text, photography and video.&nbsp;He drew inspiration from Japanese Nō and Kabuki theatre, and from the spatial choreographies of Oskar Schlemmer in the “Bauhaus Dances” and “The Triadic Ballet”.<br>‍<br>His productions, like waking dreams, in slow motion, do not follow coherent narratives; like the texts of Christopher Knowles, they are composed of fragments and repetitions. He is a master of slowness, of light design, of light and shadow, of the human figure in space, of the precise direction of performers — experimental, yet formal, always precise in detail. They stand in stark contrast to the frenetic, nervous “Regietheater”&nbsp;of our time, with its careless direction of actors.<br>‍<br>Wilson performed as actor, notably in the solo “Hamlet: A Monologue”, which I attended with my friend, the designer Cinzia Ruggeri, at the Piccolo Teatro in Milan in 1995. His collaborations on solo performances with Isabelle Huppert are among the highlights of the actress' career.<br>‍<br>In his operatic work, as opera director —&nbsp;“Norma”&nbsp;by Bellini at the Zurich Opera House, for instance — or Richard Wagner operas, this slowness can become mannered to the point of near-unbearability.<br>‍<br>Over the years, I attended many performances with and by Bob around the world, and we often met, including a visit to my installation of the Figurines for Oskar Schlemmer’s&nbsp;“The Triadic Ballet”&nbsp;at the Museo Nacional Centro de Arte Reina Sofía in Madrid. In 2022 Bob staged in Hamburg’s Thalia Theatre, “H-100 Seconds to Midnight” inspired by the physicist Stephen Hawking, working again with Lucinda Childs and with music by Philip Glass. It was a happy reunion with Bob and Lucinda.<br>‍<br>At the Watermill Center, founded by&nbsp;Wilson in 1992 in Long Island, NY, as an interdisciplinary laboratory for the arts and humanities, his knowledge and experience influenced numerous artists, which will shape performance and theatre and will bear his legacy forward -- a choreography of thought, form, and vision unfolding anew.<br><br>Photo: © C. Raman Schlemmer <br><br><br></p>",
-    "images": [],
+    "images": [
+      {
+        "src": "/images/robert-wilson-with-c-raman-schlemmer.png",
+        "alt": "Robert Wilson with C. Raman Schlemmer",
+        "srcset": "/images/robert-wilson-with-c-raman-schlemmer-p-500.png 500w, /images/robert-wilson-with-c-raman-schlemmer.png 800w",
+        "sizes": "(max-width: 767px) 100vw, 50vw"
+      }
+    ],
     "bodyHtml": "",
     "detailLinks": []
   },
   {
     "titleHtml": "<p class=\"schlemmer-text news\"><span class=\"highlight\">Names and Links:&nbsp;<br></span>‍<br><a href=\"https://robertwilson.com/news\" target=\"_blank\" class=\"schlemmer-link\">Robert Wilson</a><br><a href=\"https://www.lucindachilds.com/\" target=\"_blank\" class=\"schlemmer-link\">Lucinda Childs</a><br><a href=\"https://www.schlemmer.org/ute-jaina-schlemmer\" target=\"_blank\" class=\"schlemmer-link\">Jaïna</a><br><a href=\"https://festival-avignon.com/en/edition-1976/programme/einstein-on-the-beach-33093\" target=\"_blank\" class=\"schlemmer-link\">Festival d’Avignon</a><br><a href=\"https://www.moma.org/artists/3167-christopher-knowles\" target=\"_blank\" class=\"schlemmer-link\">Christopher Knowles</a><br>‍<a href=\"https://www.instagram.com/isabelle.huppert/?hl=de\" target=\"_blank\" class=\"schlemmer-link\">Isabelle Huppert<br></a><a href=\"https://www.nohgaku.or.jp/en/guide/introduction-to-nō\" target=\"_blank\" class=\"schlemmer-link\">Nō</a><br><a href=\"https://www.kabukiweb.net/\" target=\"_blank\" class=\"schlemmer-link\">Kabuki</a><br><a href=\"https://www.schlemmer.org/oskar-schlemmer\" target=\"_blank\" class=\"schlemmer-link\">Oskar Schlemmer</a><br><a href=\"https://www.schlemmer.org/triadic-ballet\" target=\"_blank\" class=\"schlemmer-link\">The Triadic Ballet</a><br><a href=\"https://philipglass.com/\" target=\"_blank\" class=\"schlemmer-link\">Philip Glass</a><br><a href=\"https://www.thalia-theater.de/en/ourstory\" target=\"_blank\" class=\"schlemmer-link\">Thalia Theater</a><br><a href=\"https://www.hawking.org.uk/\" target=\"_blank\" class=\"schlemmer-link\">Stephen Hawking</a><br><a href=\"https://www.watermillcenter.org/about/\" target=\"_blank\" class=\"schlemmer-link\">Watermill Center</a><br></p>",
-    "images": [],
+    "images": [
+      {
+        "src": "/images/robert-wilson-theatre-directorand-playwright.png",
+        "alt": "Robert Wilson, theatre director and playwright",
+        "srcset": "/images/robert-wilson-theatre-directorand-playwright-p-500.png 500w, /images/robert-wilson-theatre-directorand-playwright.png 800w",
+        "sizes": "(max-width: 767px) 100vw, 50vw"
+      }
+    ],
     "bodyHtml": "",
     "detailLinks": []
   },
   {
     "titleHtml": "<p class=\"schlemmer-text news\"><span class=\"highlight\">Smt. <strong>P.N. Sathirathnam</strong><br></span>20 July 1938 - 30 June 2025<br>‍<br>Widow of Sree <strong>C. Parankutty<br>Changaramkumarath Family<br>Vadakyil<br>Mullassery, Kerala, India<br><br>‍</strong><br>Kollavarsham 1200 Midhunam 21 Asthi Sanjayanam on (5 July 2025)<br>‍<br>കൊല്ല വർഷം 1200 മിഥുനം 21 , അസ്ഥി സഞ്ചയനം, ജൂൺ 5 2025 .<br>‍<br>With the demise of my great-aunt&nbsp;Sathirathnam, an era comes to an end. She was one of the last surviving members of my paternal Indian family who witnessed and lived through the radical transformations of Indian history — from the British Raj to Independence, from a life of immense wealth to the sweeping land reforms introduced by the Communist government in Kerala.<br>‍<br>She was born into an aristocratic family near&nbsp;Kodungallur, whose lineage includes her great-aunt, a relation of my visionary great-grandfather,&nbsp;<strong>C. Krishna Vakyil.</strong>&nbsp;<br>‍<br>Sathirathnam&nbsp;— whose Malayalam name means&nbsp;“<em>a jewel among women”&nbsp;or&nbsp;“the jewel of a virtuous spouse</em>”&nbsp;— married into the aristocratic, landowning&nbsp;<strong>Changaramkumarath</strong>&nbsp;family in&nbsp;Mullassery. In pre-Independence times, the family's wealth was anchored in vast paddy fields and coconut groves surrounding their <strong>Vakyil</strong> House.<br>‍<br>The palatial country manor of&nbsp;C. Krishna Vakyil&nbsp;was nearby, -- next to the town house in Calicut, a place deeply tied to our and my family history.<br>‍<br>I have visited Sathirathnam’s tall, elegant mother, her ancestral home, and the homes of her sisters — all echoing the grace of a bygone era. <strong>Smt. P. N. Sathirathnam&nbsp;</strong>is survived by her daughters,&nbsp; <strong>Sheba</strong>&nbsp;and&nbsp;<strong>Deepa</strong>, her son's widows, and her fabulous eight grandchildren.<br>‍<br>Sathirathnam’s cuisine in Malayalam tradition was always lavish and so delicious, to which she dedicated daily so much time. An&nbsp;elegant, grand lady, she was also a&nbsp;warm, caring grandmother, devoted to keeping the family property together. Her wonderful old&nbsp;Vadakyil House&nbsp;was always open, welcoming relatives and visitors alike — a place where tradition, hospitality, and family ties were cherished and sustained.<br><br>Photo: C. Raman Schlemmer ©<br></p>",
-    "images": [],
+    "images": [
+      {
+        "src": "/images/1.-Smt.-P.-N.-Sathirathnam-eating-meal-Onam-Festival.png",
+        "alt": "Smt. P.N. Sathirathnam at Onam Festival meal",
+        "srcset": "/images/1.-Smt.-P.-N.-Sathirathnam-eating-meal-Onam-Festival-p-500.png 500w, /images/1.-Smt.-P.-N.-Sathirathnam-eating-meal-Onam-Festival.png 800w",
+        "sizes": "(max-width: 767px) 100vw, 50vw"
+      },
+      {
+        "src": "/images/2.-Smt.-P.-N.-Sathirathnam-with-many-family-members.png",
+        "alt": "Smt. P.N. Sathirathnam with family members",
+        "srcset": "/images/2.-Smt.-P.-N.-Sathirathnam-with-many-family-members-p-500.png 500w, /images/2.-Smt.-P.-N.-Sathirathnam-with-many-family-members.png 800w",
+        "sizes": "(max-width: 767px) 100vw, 50vw"
+      },
+      {
+        "src": "/images/3.-Smt.-P.-N.-Sathirathnam-in-Nedumpura.png",
+        "alt": "Smt. P.N. Sathirathnam in Nedumpura",
+        "srcset": "/images/3.-Smt.-P.-N.-Sathirathnam-in-Nedumpura-p-500.png 500w, /images/3.-Smt.-P.-N.-Sathirathnam-in-Nedumpura.png 800w",
+        "sizes": "(max-width: 767px) 100vw, 50vw"
+      },
+      {
+        "src": "/images/4.-Smt.-P.-N.-Sathirathnam-with-C.H.-Hiran-and-Cecile-Pierburg-.png",
+        "alt": "Smt. P.N. Sathirathnam with C.H. Hiran and Cecile Pierburg",
+        "srcset": "/images/4.-Smt.-P.-N.-Sathirathnam-with-C.H.-Hiran-and-Cecile-Pierburg-p-500.png 500w, /images/4.-Smt.-P.-N.-Sathirathnam-with-C.H.-Hiran-and-Cecile-Pierburg-.png 800w",
+        "sizes": "(max-width: 767px) 100vw, 50vw"
+      }
+    ],
     "bodyHtml": "",
     "detailLinks": []
   },
   {
     "titleHtml": "<p class=\"schlemmer-text news\"><span class=\"highlight\">Maurizio Pollini <br></span>15 January 1942 – 23 March 2023<br>‍<br>One of the greatest musicians of our time, <em>A poet of the piano</em>. Pianist and conductor.&nbsp;<br><br>I have had the privilege to attend his concerts since my student times in London, to hear his recitals in Berlin, Salzburg, Lucerne, Zürich and of course in Milan, to hear him play in orchestra concerts with his great friend, conductor, Claudio Abbado or play together with Martha Agerich.&nbsp;<br><br>Unforgettable the visit to his solo concert at Teatro alla Scala Milan with Jaïna Schlemmer, my mother, on my birthday on 18 October 2009.<br><br>Rigorous in the choice of the repertoire of his concerts, Pollini juxtaposed compositions of the great masters Bach, Beethoven, Chopin, Debussy, with music by Arnold Schoenberg and his contemporaries Luigi Nono, Luciano Berio, Pierre Boulez.<br><br>Pollini travelled with a \"Fabbrini\" - one of the Steinway grand pianos worked on by the Italian piano maker Angelo Fabbrini. Always accompanying the maestro, Fabbrini was ever-present to retune the piano before each concert. I would meet him backstage in Berlin, Stresa, and elsewhere.<br><br>With both lightness and precision, Pollini has made music more intelligible and at the same time offered us so much generosity.<br><br>On the morning of 26 March 2024, in the foyer of Teatro alla Scala, his coffin was laid out for people to bid him farewell. Through the central door to the auditorium In the distance on the stage of the theatre was placed his grand piano “Fabbrini”. After paying my respects in the foyer, I had the great privilege of being invited upstairs to Pollini’s personal “Camerino” at Teatro alla Scala to offer condolences to his wife, the musician and pianist Marilisa Marzotto. Here, he had his own piano and prepared himself before recitals. Marilisa Marzotto and Pollini had met when they were eleven years old.\"<br><br>Photo: C. Raman Schlemmer<br></p>",
-    "images": [],
+    "images": [
+      {
+        "src": "/images/maurizio-pollini.png",
+        "alt": "Maurizio Pollini, pianist",
+        "srcset": "/images/maurizio-pollini-p-500.png 500w, /images/maurizio-pollini.png 800w",
+        "sizes": "(max-width: 767px) 100vw, 50vw"
+      }
+    ],
     "bodyHtml": "",
     "detailLinks": [
       {
@@ -42,43 +114,90 @@
   },
   {
     "titleHtml": "<p class=\"schlemmer-text news\"><span class=\"highlight\">C. Harish </span><br>1960 – 7 February 2024<br>Son of Sree C. Parankutty and Smt. Sathirathnam Parankutty<br>Changaramkumarath Family<br>Mullassery, Kerala, India<br>‍<br>Cousin brother of C. Raman Schlemmer<br><br>C. Harish is survived by his mother Sathirathnam, wife Beena, sons C. H. Hiran (Babaloo)<br>and C. H. Priyank (Bhavan) <br><br>C. Harish with his wife Beena on traditional Kerala swing, Malabar House, Fort Cochin,<br>Kochi, Kerala, India<br>‍<br>Photo: C. Raman Schlemmer<br>‍<br>September 2014<br>C. Harish and C. Raman Schlemmer on traditional Kerala swing, Malabar House, Fort<br>Cochin, Kochi, Kerala, India<br>September 2014<br>‍<br>Photo: Photo Archive C. Raman Schlemmer<br></p>",
-    "images": [],
+    "images": [
+      {
+        "src": "/images/C-Harish-12.02.2024-ritual.jpeg",
+        "alt": "C. Harish during ritual ceremony, February 2024",
+        "srcset": "/images/C-Harish-12.02.2024-ritual-p-500.jpeg 500w, /images/C-Harish-12.02.2024-ritual.jpeg 800w",
+        "sizes": "(max-width: 767px) 100vw, 50vw"
+      }
+    ],
     "bodyHtml": "",
     "detailLinks": []
   },
   {
     "titleHtml": "<p class=\"schlemmer-text news\"><span class=\"highlight\">Harald Falckenberg <br></span>1943 – 2023<br>We mourn our dear friend, collector and patron of the arts, Harald Falckenberg <br><br>Pictured here with Robert Wilson<br><br></p>",
-    "images": [],
+    "images": [
+      {
+        "src": "/images/Falckenberg-with-Robert-Wilson-.png",
+        "alt": "Harald Falckenberg with Robert Wilson",
+        "srcset": "/images/Falckenberg-with-Robert-Wilson-p-500.png 500w, /images/Falckenberg-with-Robert-Wilson-.png 800w",
+        "sizes": "(max-width: 767px) 100vw, 50vw"
+      }
+    ],
     "bodyHtml": "",
     "detailLinks": []
   },
   {
     "titleHtml": "<p class=\"schlemmer-text news\"><span class=\"highlight\">Claude Ruiz-Picasso <br></span>1947 – 2023<br>Son of Françoise Gilot (1921 - 2023) and Pablo Picasso, brother of Paloma Picasso<br><br>Photo:&nbsp;Claude Picasso with U. Jaïna Schlemmer and C. Raman Schlemmer, at the Oskar Schlemmer retrospective exhibition at Museo Nacional Centro de Arte Reina Sofía, 1996<br></p>",
-    "images": [],
+    "images": [
+      {
+        "src": "/images/Claude-Ruiz-Picasso-watermark.jpg",
+        "alt": "Claude Ruiz-Picasso",
+        "sizes": "(max-width: 767px) 100vw, 50vw"
+      }
+    ],
     "bodyHtml": "",
     "detailLinks": []
   },
   {
     "titleHtml": "<p class=\"schlemmer-text news\"><span class=\"highlight\">Malou Kirchhofer (Maitra)<br>‍</span>1950 – 2023<br>Medical eye specialist<br><br>Malou and Raman started school together at the boarding school Avrona, Tarasp, Engadin, Switzerland. The teaching followed the school curriculum of Rudolf Steiner&nbsp;<br><br>Photo: C. Raman Schlemmer&nbsp;<br></p>",
-    "images": [],
+    "images": [
+      {
+        "src": "/images/Malou-Kirchhofer-Ochsen-Feldberg.png",
+        "alt": "Malou Kirchhofer at Ochsen Feldberg",
+        "srcset": "/images/Malou-Kirchhofer-Ochsen-Feldberg-p-500.png 500w, /images/Malou-Kirchhofer-Ochsen-Feldberg.png 800w",
+        "sizes": "(max-width: 767px) 100vw, 50vw"
+      }
+    ],
     "bodyHtml": "",
     "detailLinks": []
   },
   {
     "titleHtml": "<p class=\"schlemmer-text news\"><span class=\"highlight\">Wolfgang Meyer-Rässler<br></span>1950 – 2023<br>Interior designer<br>Called Melo, friend since schooldays at Waldorfschule in Stuttgart, Germany <br></p>",
-    "images": [],
+    "images": [
+      {
+        "src": "/images/Melo_remember-watermark.jpg",
+        "alt": "Wolfgang Meyer-Rässler (Melo)",
+        "srcset": "/images/Melo_remember-watermark-p-500.jpg 500w, /images/Melo_remember-watermark.jpg 800w",
+        "sizes": "(max-width: 767px) 100vw, 50vw"
+      }
+    ],
     "bodyHtml": "",
     "detailLinks": []
   },
   {
     "titleHtml": "<p class=\"schlemmer-text news\"><span class=\"highlight\">Menahem Pressler<br></span>1923 – 2023<br>Musician<br><br>Born in Magdeburg, Germany, he and his Jewish family escaped in 1939 via Trieste to Palestine. In 1955 Pressler founded the Beaux Arts Trio. C. Raman Schlemmer remembers: “I heard the Trio, when they performed at the Stresa Festival, Lago Maggiore, Italy. I met Pressler on a train on 16 November 2013 when I was travelling from Berlin to Weimar, and he was on his way to Leipzig. We had a vivid conversation and when passing near Magdeburg, he told me his story of his escape, life in Palestine and teaching in the US. Pressler had started a solo career at the age of 90. He invited me to his debut concert at Philharmonie Berlin, and the rehearsals. W. A. Mozart: Piano Concerto No. 17 in G major K. 453. I sat next to his daughter. Simon Rattle sat in the public. He said such moving encouraging words to the young musicians, after the rehearsal. A great musician and a wonderful human being.”<br>‍<br>Photo: Menahem Pressler leaving the train in Bitterfeld and saluting C. Raman Schlemmer<br>Photo: C. Raman Schlemmer<br></p>",
-    "images": [],
+    "images": [
+      {
+        "src": "/images/Menahem-Pressler.png",
+        "alt": "Menahem Pressler, pianist",
+        "srcset": "/images/Menahem-Pressler-p-500.png 500w, /images/Menahem-Pressler.png 800w",
+        "sizes": "(max-width: 767px) 100vw, 50vw"
+      }
+    ],
     "bodyHtml": "",
     "detailLinks": []
   },
   {
     "titleHtml": "<p class=\"schlemmer-text news\"><span class=\"highlight\">Peter Weibel<br></span>1944 – 2023<br>Media artist and curator<br>Director of ZKM Karlsruhe, Germany from 1999 until his death on 1 March 2023<br><br>Photo: Peter Weibel with choreographer William Forsythe, ZKM Karlsruhe, 3 February 2023. Photo C. Raman Schlemmer &nbsp;<br></p>",
-    "images": [],
+    "images": [
+      {
+        "src": "/images/Peter-Weibel-watermark.jpg",
+        "alt": "Peter Weibel, media artist and curator, ZKM Karlsruhe",
+        "sizes": "(max-width: 767px) 100vw, 50vw"
+      }
+    ],
     "bodyHtml": "",
     "detailLinks": [
       {
@@ -89,7 +208,14 @@
   },
   {
     "titleHtml": "<p class=\"schlemmer-text news\"><a href=\"https://isozaki.co.jp/#\" target=\"_blank\"><span class=\"highlight\"><strong>Arata Isozaki</strong></span></a><span class=\"highlight\"><strong>&nbsp; 磯崎 新<br>‍</strong></span>1931 – 2022<br>Architect, Japan<br>Pritzker Price in 2019<br>‍<br>Since the 1980s Arata Isozaki and his wife, the sculptress Aiko Miyawaki, were friends with C. Raman Schlemmer. When U. Jaïna Schlemmer visited with her son C. Raman Tokyo in 1995 they invited by Isozaki and Aiko Miyawaki to their house.&nbsp;<br>‍<br>Arata Isozaki in Beijing, 2012&nbsp;<br>Photo: C. Raman Schlemmer&nbsp;<br><br></p>",
-    "images": [],
+    "images": [
+      {
+        "src": "/images/Arata-Isozaki.png",
+        "alt": "Arata Isozaki, architect, Pritzker Prize 2019",
+        "srcset": "/images/Arata-Isozaki-p-500.png 500w, /images/Arata-Isozaki.png 800w",
+        "sizes": "(max-width: 767px) 100vw, 50vw"
+      }
+    ],
     "bodyHtml": "",
     "detailLinks": []
   },
@@ -101,7 +227,13 @@
   },
   {
     "titleHtml": "<p class=\"schlemmer-text news\"><span class=\"highlight\">Brenda Richardson<br></span>1942 – 2022<br><br>Deputy director for art and curator of modern painting and sculpture at the Baltimore Museum of Art, Baltimore, Maryland, USACurator of epoch-making exhibitions including the black paintings by Frank Stella, and the Baltimore-based filmmaker John Waters. With the support and contribution of U. Jaïna Schlemmer and C. Raman Schlemmer, Brenda Richardson curated the first retrospective exhibition of the work of Oskar Schlemmer in the US in 1985, together with Arnold Lehman, director of the museum. The exhibition travelled to The Walker Institute, the Diego Museum of Art, the IBM Gallery of Science and Art, New York, and the Stedelijk Museum in Amsterdam, Netherlands in 1986. Brenda became friends with Tut Schlemmer, U. Jaïna Schlemmer and C. Raman Schlemmer<br></p>",
-    "images": [],
+    "images": [
+      {
+        "src": "/images/Brenda-Richardson-watermark.jpg",
+        "alt": "Brenda Richardson, art curator and deputy director of the Baltimore Museum of Art",
+        "sizes": "(max-width: 767px) 100vw, 50vw"
+      }
+    ],
     "bodyHtml": "",
     "detailLinks": [
       {
@@ -112,7 +244,14 @@
   },
   {
     "titleHtml": "<p class=\"schlemmer-text news\"><span class=\"highlight\">Dagny Corcoran Janss<br></span>1945 - 2022<br><br>1978 Dagny and James Corcoran invited C. Raman Schlemmer to work for the Joseph Cornell exhibition, at their James Corcoran Gallery, Los Angeles, California. The exhibition was curated by Walter Hopps. Dagny and Jim introduced Raman to Lucina Childs, Robert Wilson, Roy Lichtenstein, Ed and Nancy Kienholz, Ed Ruscha, John Baldessari, David Hockney, Joan and Joe Quinn, Nick Wilder. They organized a party for Raman at Santa Monica Palisades, with guests &nbsp;Robert Rauschenberg, Christopher Isherwood and Don Bachardy, Billy Al Bengston.<br><br>In 1977 Dagny Corcoran founded Art Catalogues in Los Angeles, offering an international range of books and catalogues produced for and about museum and gallery exhibitions.<br><br>Photo: Dagny Corcoran and C. Raman Schlemmer 1978<br></p>",
-    "images": [],
+    "images": [
+      {
+        "src": "/images/Dagny-Corcoran-Janss-watermark.jpg",
+        "alt": "Dagny Corcoran Janss, art dealer, Los Angeles",
+        "srcset": "/images/Dagny-Corcoran-Janss-watermark-p-500.jpg 500w, /images/Dagny-Corcoran-Janss-watermark.jpg 800w",
+        "sizes": "(max-width: 767px) 100vw, 50vw"
+      }
+    ],
     "bodyHtml": "",
     "detailLinks": [
       {
@@ -123,7 +262,18 @@
   },
   {
     "titleHtml": "<p class=\"schlemmer-text news\"><span class=\"highlight\">Christiene Pierburg<br></span>1944 – 2021<br>Philanthropist and supporter of the arts<br><br>Born and died in Badenweiler, Christiene lived the past decades in the house of the poet René Schickele, which she acquired with her husband Jürgen Pierburg and renovated and creatively redesigned.<br>‍<br>Christine Pierburg regularly attended the Salzburg Festival – also in company of C. Raman Schlemmer. <br>‍<br>In the last years of his life, she became a confidant friend of Herbert von Karajan and travelled with the Berliner Philharmoniker internationally.<br><br>Photo: Christine Pierburg with C. Raman Schlemmer on her birthday at the opening of the exhibition Monet, 20th anniversary of Fondation Beyeler, 30 March 2017<br></p>",
-    "images": [],
+    "images": [
+      {
+        "src": "/images/Christiene-Pierburg-watermark.jpg",
+        "alt": "Christiene Pierburg, philanthropist",
+        "sizes": "(max-width: 767px) 100vw, 50vw"
+      },
+      {
+        "src": "/images/Christiene-Pierburg-CRS-watermark.jpg",
+        "alt": "Christiene Pierburg with C. Raman Schlemmer",
+        "sizes": "(max-width: 767px) 100vw, 50vw"
+      }
+    ],
     "bodyHtml": "",
     "detailLinks": []
   },
