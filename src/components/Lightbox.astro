@@ -1,0 +1,65 @@
+---
+---
+<div id="lightbox" class="lightbox" role="dialog" aria-modal="true" aria-label="Image viewer">
+  <button id="lightbox-close" aria-label="Close image viewer">×</button>
+  <figure class="lightbox__figure">
+    <img id="lightbox-img" src="" alt="" />
+    <figcaption id="lightbox-caption" class="caption"></figcaption>
+  </figure>
+</div>
+
+<script>
+  const lb = document.getElementById('lightbox')!;
+  const lbImg = document.getElementById('lightbox-img') as HTMLImageElement;
+  const lbCap = document.getElementById('lightbox-caption')!;
+  const lbClose = document.getElementById('lightbox-close')!;
+
+  function openLightbox(src: string, alt: string, caption: string) {
+    lbImg.src = src;
+    lbImg.alt = alt;
+    lbCap.textContent = caption;
+    lb.classList.add('open');
+    lbClose.focus();
+  }
+  function closeLightbox() {
+    lb.classList.remove('open');
+  }
+
+  document.addEventListener('click', (e) => {
+    const target = e.target as HTMLElement;
+    const img = target.closest('img[data-lightbox]') as HTMLImageElement | null;
+    if (img) {
+      e.preventDefault();
+      openLightbox(
+        img.dataset.full ?? img.src,
+        img.alt,
+        img.dataset.caption ?? ''
+      );
+    }
+  });
+
+  lbClose.addEventListener('click', closeLightbox);
+  lb.addEventListener('click', (e) => { if (e.target === lb) closeLightbox(); });
+  document.addEventListener('keydown', (e) => { if (e.key === 'Escape') closeLightbox(); });
+</script>
+
+<style>
+  #lightbox-close {
+    position: absolute;
+    top: 1rem;
+    right: 1.5rem;
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 2.5rem;
+    cursor: pointer;
+    line-height: 1;
+    padding: 0.25rem 0.5rem;
+    z-index: 201;
+  }
+  #lightbox-img {
+    max-width: 90vw;
+    max-height: 85vh;
+    object-fit: contain;
+  }
+</style>

@@ -1,0 +1,191 @@
+[
+  {
+    "className": "main-slide-1 w-slide",
+    "headingHtml": "4 September 2026<br><br>Birthday anniversary of Oskar Schlemmer (1888 – 1943)",
+    "bodyHtml": "<p class=\"schlemmer-text raman\">On the occasion of his birthday, join C. Raman Schlemmer to remember his grandfather Oskar Schlemmer, whose pioneering œuvre crossed the boundaries of painting, sculpture, theatre, dance and design. His vision of the human figure in space, most famously realised in the dance performance “The Triadic Ballet” (1922), the “Bauhaus Dances”, the painting “Bauhaus Staircase” (1932), and noted in his diaries and writings, remains an enduring contribution to modern art.</p><a href=\"https://mint.schlemmer.org\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"schlemmer-button button-standard w-button\">› Mint a Bauhaus Signet</a>",
+    "images": [
+      {
+        "src": "/images/oskar-schlemmer-ascona.jpg",
+        "srcset": "/images/oskar-schlemmer-ascona-p-500.jpg 500w, /images/oskar-schlemmer-ascona-p-800.jpg 800w, /images/oskar-schlemmer-ascona.jpg 843w",
+        "alt": "Oskar Schlemmer as Dancer in “The Triadic Ballet”, 1922. Altered photograph",
+        "caption": "Oskar Schlemmer / Jaïna Schlemmer",
+        "width": "471",
+        "sizes": "380px",
+        "className": "image-3 april"
+      },
+      {
+        "src": "/images/Bauhaus-Signet-Oskar-Schlemmer-black-background.gif",
+        "alt": "Oskar Schlemmer “Bauhaus Signet”, 1922–1923, Bauhaus Weimar",
+        "caption": "Oskar Schlemmer “Bauhaus Signet”, 1922–1923, Bauhaus Weimar",
+        "width": "260",
+        "className": "image-3 april"
+      }
+    ]
+  },
+  {
+    "className": "main-slide-1 w-slide",
+    "bodyHtml": "<strong class=\"bold-text-3\">Oskar Schlemmer<br><em>Abstrakte Figur, Freiplastik G |Abstract Figure, Sculpture in the Round G,</em>1921/1923<br><br></strong><strong>‍</strong>‍<br>",
+    "images": [
+      {
+        "src": "/images/oskar-schlemmer-sculpture-rundplastik-1923.png",
+        "srcset": "/images/oskar-schlemmer-sculpture-rundplastik-1923-p-500.png 500w, /images/oskar-schlemmer-sculpture-rundplastik-1923.png 800w",
+        "alt": "Abstract figure sculpture by Bauhaus master Oskar Schlemmer",
+        "width": "321",
+        "sizes": "(max-width: 479px) 94vw, 321px",
+        "className": "image-3 april",
+        "caption": "© Photo Archive C. Raman Schlemmer"
+      }
+    ]
+  },
+  {
+    "className": "main-slide-1 w-slide",
+    "images": [
+      {
+        "src": "/images/oskar-schlemmer-painting-moma-bauhaus-staircase.jpeg",
+        "srcset": "/images/oskar-schlemmer-painting-moma-bauhaus-staircase-p-500.jpeg 500w, /images/oskar-schlemmer-painting-moma-bauhaus-staircase.jpeg 757w",
+        "alt": "Oskar Schlemmer painting bauhaus staircase Museum of Modern Art (MoMA)",
+        "width": "494",
+        "sizes": "(max-width: 767px) 100vw, 494px",
+        "className": "image-3 staircase"
+      }
+    ]
+  },
+  {
+    "className": "traidic-ballet w-slide",
+    "images": [
+      {
+        "src": "/images/Das-Triadische-Ballet-Centenary-f.png",
+        "srcset": "/images/Das-Triadische-Ballet-Centenary-f-p-500.png 500w, /images/Das-Triadische-Ballet-Centenary-f-p-800.png 800w, /images/Das-Triadische-Ballet-Centenary-f-p-1080.png 1080w, /images/Das-Triadische-Ballet-Centenary-f-p-1600.png 1600w, /images/Das-Triadische-Ballet-Centenary-f-p-2000.png 2000w, /images/Das-Triadische-Ballet-Centenary-f-p-2600.png 2600w, /images/Das-Triadische-Ballet-Centenary-f.png 2652w",
+        "alt": "Oskar Schlemmer — The Triadic Ballet, centenary performance",
+        "width": "1195",
+        "sizes": "(max-width: 767px) 100vw, (max-width: 991px) 728px, 940px"
+      }
+    ]
+  },
+  {
+    "className": "triadic-drawing w-slide",
+    "images": [
+      {
+        "src": "/images/bauhaus-triadisches-ballett-skizze-watermark.jpg",
+        "srcset": "/images/bauhaus-triadisches-ballett-skizze-watermark-p-500.jpg 500w, /images/bauhaus-triadisches-ballett-skizze-watermark-p-800.jpg 800w, /images/bauhaus-triadisches-ballett-skizze-watermark-p-1080.jpg 1080w, /images/bauhaus-triadisches-ballett-skizze-watermark.jpg 1200w",
+        "alt": "Oskar Schlemmer bauhaus triadisches ballett sketch",
+        "sizes": "100vw"
+      }
+    ]
+  },
+  {
+    "className": "main-slide-5 w-slide",
+    "images": [
+      {
+        "src": "/images/oskar-schlemmer-gelbe-figur-watermark.jpg",
+        "srcset": "/images/oskar-schlemmer-gelbe-figur-watermark-p-500.jpg 500w, /images/oskar-schlemmer-gelbe-figur-watermark-p-800.jpg 800w, /images/oskar-schlemmer-gelbe-figur-watermark-p-1080.jpg 1080w, /images/oskar-schlemmer-gelbe-figur-watermark.jpg 1254w",
+        "alt": "Oskar Schlemmer Triadic Ballet dancer",
+        "width": "490",
+        "sizes": "(max-width: 767px) 100vw, 490px"
+      },
+      {
+        "src": "/images/Triadic-Taucher-2-watermark.png",
+        "srcset": "/images/Triadic-Taucher-2-watermark-p-500.png 500w, /images/Triadic-Taucher-2-watermark-p-800.png 800w, /images/Triadic-Taucher-2-watermark.png 836w",
+        "alt": "Oskar Schlemmer dancer Triadic Taucher figure",
+        "width": "600",
+        "sizes": "(max-width: 767px) 100vw, 600px",
+        "className": "image-6"
+      }
+    ]
+  },
+  {
+    "className": "main-slide-6 w-slide",
+    "images": [
+      {
+        "src": "/images/DTB_3_Figurinen_Türk-Watermark.png",
+        "srcset": "/images/DTB_3_Figurinen_Türk-Watermark-p-500.png 500w, /images/DTB_3_Figurinen_Türk-Watermark-p-800.png 800w, /images/DTB_3_Figurinen_Türk-Watermark-p-1080.png 1080w, /images/DTB_3_Figurinen_Türk-Watermark.png 1200w",
+        "alt": "Oskar Schlemmer — Triadic Ballet figurines, Turkish suite",
+        "width": "1195",
+        "sizes": "(max-width: 767px) 100vw, (max-width: 991px) 728px, 940px"
+      }
+    ]
+  },
+  {
+    "className": "w-slide",
+    "images": [
+      {
+        "src": "/images/DTB-Spirale_black-background-watermark.jpg",
+        "srcset": "/images/DTB-Spirale_black-background-watermark-p-500.jpg 500w, /images/DTB-Spirale_black-background-watermark-p-800.jpg 800w, /images/DTB-Spirale_black-background-watermark.jpg 1080w",
+        "alt": "Oskar Schlemmer DTB Spirale black background Triadic Ballet figure",
+        "width": "500",
+        "sizes": "(max-width: 767px) 100vw, 500px",
+        "className": "image-5"
+      }
+    ]
+  },
+  {
+    "className": "w-slide",
+    "images": [
+      {
+        "src": "/images/DTB-Spirale-Draht-Photo-watermark.jpg",
+        "srcset": "/images/DTB-Spirale-Draht-Photo-watermark-p-500.jpg 500w, /images/DTB-Spirale-Draht-Photo-watermark-p-800.jpg 800w, /images/DTB-Spirale-Draht-Photo-watermark.jpg 1080w",
+        "alt": "Oskar Schlemmer dance figure Spirale Dans",
+        "width": "500",
+        "sizes": "(max-width: 767px) 100vw, 500px"
+      }
+    ]
+  },
+  {
+    "className": "w-slide",
+    "images": [
+      {
+        "src": "/images/DTB-Scheibentaenzer-04-Watermark.png",
+        "srcset": "/images/DTB-Scheibentaenzer-04-Watermark-p-500.png 500w, /images/DTB-Scheibentaenzer-04-Watermark-p-800.png 800w, /images/DTB-Scheibentaenzer-04-Watermark-p-1080.png 1080w, /images/DTB-Scheibentaenzer-04-Watermark.png 1200w",
+        "alt": "Oskar Schlemmer Triadic Ballet dancer scheibent figure",
+        "width": "500",
+        "sizes": "(max-width: 767px) 100vw, 500px",
+        "className": "image-5"
+      },
+      {
+        "src": "/images/DTB-Scheibentaenzer-04-2-watermark.png",
+        "srcset": "/images/DTB-Scheibentaenzer-04-2-watermark-p-500.png 500w, /images/DTB-Scheibentaenzer-04-2-watermark-p-800.png 800w, /images/DTB-Scheibentaenzer-04-2-watermark.png 1080w",
+        "alt": "Oskar Schlemmer dance figure Scheibentaenzer",
+        "width": "500",
+        "sizes": "(max-width: 767px) 100vw, 500px",
+        "className": "image-5"
+      }
+    ]
+  },
+  {
+    "className": "w-slide",
+    "images": [
+      {
+        "src": "/images/DTB-Drahtfigur-watermark.jpg",
+        "srcset": "/images/DTB-Drahtfigur-watermark-p-500.jpg 500w, /images/DTB-Drahtfigur-watermark-p-800.jpg 800w, /images/DTB-Drahtfigur-watermark.jpg 1080w",
+        "alt": "Oskar Schlemmer Triadic Ballet dancer Drahtfigur",
+        "width": "500",
+        "sizes": "(max-width: 767px) 100vw, 500px",
+        "className": "image-5 lower"
+      }
+    ]
+  },
+  {
+    "className": "w-slide",
+    "images": [
+      {
+        "src": "/images/DTB-Goldkugel-watermark.png",
+        "srcset": "/images/DTB-Goldkugel-watermark-p-500.png 500w, /images/DTB-Goldkugel-watermark-p-800.png 800w, /images/DTB-Goldkugel-watermark.png 1080w",
+        "alt": "Oskar Schlemmer — Triadic Ballet Goldkugel dancer figure",
+        "width": "500",
+        "sizes": "(max-width: 767px) 100vw, 500px"
+      }
+    ]
+  },
+  {
+    "className": "black-test w-slide",
+    "images": [
+      {
+        "src": "/images/schlemmer-triadisch-ballet-baton-guy-watermark.jpg",
+        "srcset": "/images/schlemmer-triadisch-ballet-baton-guy-watermark-p-500.jpg 500w, /images/schlemmer-triadisch-ballet-baton-guy-watermark-p-800.jpg 800w, /images/schlemmer-triadisch-ballet-baton-guy-watermark.jpg 1143w",
+        "alt": "Oskar Schlemmer — Triadic Ballet dancer with baton",
+        "width": "500",
+        "sizes": "(max-width: 767px) 100vw, 500px"
+      }
+    ]
+  }
+]

@@ -1,0 +1,17 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { readFileSync } from 'fs';
+import { resolve } from 'path';
+
+const html = readFileSync(resolve('src/data/html/triadic-ballet.html'), 'utf-8');
+---
+
+<Layout
+  title="The Triadic Ballet"
+  description="The Triadic Ballet by Oskar Schlemmer is a symphonic dance of threeness, divided into three sections, performed by three dancers."
+  currentPath="/triadic-ballet"
+>
+  <section class="main-section schlemmer-page">
+    <div set:html={html} />
+  </section>
+</Layout>

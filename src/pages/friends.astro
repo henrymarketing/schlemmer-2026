@@ -1,0 +1,65 @@
+---
+import Layout from '../layouts/Layout.astro';
+import entries from '../data/friends.json';
+---
+
+<Layout
+  title="Friends"
+  description="Celebrating friendships with artists and figures of the arts."
+  currentPath="/friends"
+>
+  <section class="main-section imprint">
+    <div class="w-layout-blockcontainer triadic-ballet-container communique w-container">
+      <div class="text-block-2 white triadic-ballet communique">FRIENDS</div>
+
+      {entries.map((entry) => (
+        <div class="frauentreppe marionette topspace w-row">
+          <div class="w-col w-col-6">
+            <div set:html={entry.titleHtml} />
+            <div set:html={entry.bodyHtml} />
+            {entry.detailLinks.map((link) => (
+              <a href={link.href} target="_blank" rel="noopener noreferrer" class="schlemmer-button button-standard w-button">
+                {link.label}
+              </a>
+            ))}
+          </div>
+          {entry.images.length > 0 && (
+            <div class="w-col w-col-6">
+              {entry.images.map((img) => (
+                <div>
+                  {img.href ? (
+                    <a href={img.href} target="_blank" rel="noopener noreferrer" class="w-inline-block">
+                      <img
+                        src={img.src}
+                        srcset={img.srcset}
+                        sizes={img.sizes}
+                        alt={img.alt}
+                        width={img.width}
+                        loading="lazy"
+                        class="video-space"
+                        data-lightbox
+                        data-caption={img.caption}
+                      />
+                    </a>
+                  ) : (
+                    <img
+                      src={img.src}
+                      srcset={img.srcset}
+                      sizes={img.sizes}
+                      alt={img.alt}
+                      width={img.width}
+                      loading="lazy"
+                      class="video-space"
+                      data-lightbox
+                      data-caption={img.caption}
+                    />
+                  )}
+                </div>
+              ))}
+            </div>
+          )}
+        </div>
+      ))}
+    </div>
+  </section>
+</Layout>

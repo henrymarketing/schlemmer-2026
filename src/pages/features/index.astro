@@ -1,0 +1,39 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import entries from '../../data/features.json';
+---
+
+<Layout
+  title="Features"
+  description="Features of artists and figures of the arts."
+  currentPath="/features"
+>
+  <section class="main-section">
+    <div class="w-layout-blockcontainer features w-container">
+      <div class="text-block-2 white triadic-ballet communique">FEATURES</div>
+
+      {entries.map((entry, i) => {
+        const slug = i === 0 ? 'mizmorim-kammermusik-festival' : 'die-soldaten';
+        return (
+          <div>
+            <div set:html={entry.titleHtml} />
+            {entry.thumbnail && (
+              <img
+                src={entry.thumbnail.src}
+                srcset={entry.thumbnail.srcset}
+                alt={entry.thumbnail.alt}
+                width={entry.thumbnail.width}
+                loading="lazy"
+                class="video-space"
+              />
+            )}
+            {entry.bodyHtml && <p class="ute-schlemmer-caption rene-burri">{entry.bodyHtml}</p>}
+            <a href={`/features/${slug}`} class="schlemmer-button button-standard w-button">
+              Details
+            </a>
+          </div>
+        );
+      })}
+    </div>
+  </section>
+</Layout>

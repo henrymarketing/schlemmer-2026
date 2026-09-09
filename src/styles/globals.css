@@ -1,4 +1,4 @@
-@import "tailwindcss" layer(tw);
+@import "tailwindcss";
 @plugin "@tailwindcss/typography";
 
 @theme {
@@ -39,8 +39,22 @@
   }
 
   ::selection {
-    background-color: #fff;
-    color: #000;
+    background-color: rgba(255, 255, 255, 0.15);
+    color: inherit;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  :focus-visible {
+    outline: 1px solid rgba(255, 255, 255, 0.45);
+    outline-offset: 3px;
+    border-radius: 2px;
+  }
+
+  img[data-lightbox] {
+    cursor: zoom-in;
   }
 }
 
@@ -56,12 +70,14 @@
   justify-content: center;
   padding: 0 5vw;
   opacity: 0;
+  transform: translateY(-0.5rem);
   pointer-events: none;
-  transition: opacity 0.3s ease;
+  transition: opacity 0.22s ease, transform 0.22s ease;
 }
 
 .nav-overlay.open {
   opacity: 1;
+  transform: translateY(0);
   pointer-events: all;
 }
 

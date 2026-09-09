@@ -1,0 +1,66 @@
+---
+import Layout from '../layouts/Layout.astro';
+import entries from '../data/remember.json';
+---
+
+<Layout
+  title="We Remember"
+  description="Remembering key figures of the Bauhaus movement and the arts community."
+  currentPath="/remember"
+>
+  <section class="main-section imprint">
+    <div class="w-layout-blockcontainer triadic-ballet-container communique w-container">
+      <div class="text-block-2 white triadic-ballet communique">WE REMEMBER</div>
+
+      {entries.map((entry) => (
+        <div class="frauentreppe marionette topspace w-row">
+          <div class="w-col w-col-6">
+            <div set:html={entry.titleHtml} />
+            <div set:html={entry.bodyHtml} />
+            {entry.audioEmbed && <div set:html={entry.audioEmbed} />}
+            {entry.detailLinks.map((link) => (
+              <a href={link.href} target="_blank" rel="noopener noreferrer" class="schlemmer-button button-standard w-button">
+                {link.label}
+              </a>
+            ))}
+          </div>
+          {entry.images.length > 0 && (
+            <div class="w-col w-col-6">
+              {entry.images.map((img) => (
+                <div>
+                  {img.href ? (
+                    <a href={img.href} target="_blank" rel="noopener noreferrer" class="w-inline-block">
+                      <img
+                        src={img.src}
+                        srcset={img.srcset}
+                        sizes={img.sizes}
+                        alt={img.alt}
+                        width={img.width}
+                        loading="lazy"
+                        class="video-space"
+                        data-lightbox
+                        data-caption={img.caption}
+                      />
+                    </a>
+                  ) : (
+                    <img
+                      src={img.src}
+                      srcset={img.srcset}
+                      sizes={img.sizes}
+                      alt={img.alt}
+                      width={img.width}
+                      loading="lazy"
+                      class="video-space"
+                      data-lightbox
+                      data-caption={img.caption}
+                    />
+                  )}
+                </div>
+              ))}
+            </div>
+          )}
+        </div>
+      ))}
+    </div>
+  </section>
+</Layout>

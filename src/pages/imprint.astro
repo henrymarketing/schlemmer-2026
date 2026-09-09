@@ -1,0 +1,17 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { readFileSync } from 'fs';
+import { resolve } from 'path';
+
+const html = readFileSync(resolve('src/data/html/imprint.html'), 'utf-8');
+---
+
+<Layout
+  title="Imprint"
+  description="Legal details, copyright information, and disclaimers."
+  currentPath="/imprint"
+>
+  <section class="main-section imprint">
+    <div set:html={html} />
+  </section>
+</Layout>

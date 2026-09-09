@@ -1,0 +1,40 @@
+[
+  {
+    "titleHtml": "<p class=\"schlemmer-text news\"><span class=\"highlight\">Mizmorim <br>Kammermusik Festival<br>‍<strong>‍</strong></span>Basel, Switzerland<br>10-year jubilee<br>Review Music by C. Raman Schlemmer<br>24 – 31 January 2024<br></p>",
+    "images": [
+      {
+        "src": "/images/Mizmorim-Kammermusik-Festival-review-by-raman-schlemmer-1.png",
+        "srcset": "/images/Mizmorim-Kammermusik-Festival-review-by-raman-schlemmer-1-p-500.png 500w, /images/Mizmorim-Kammermusik-Festival-review-by-raman-schlemmer-1.png 800w",
+        "sizes": "(max-width: 479px) 87vw, 400px",
+        "alt": "C. Raman Schlemmer next to a painting by El Greco at the Kunstmuseum in Basel",
+        "width": "400"
+      }
+    ],
+    "bodyHtml": "",
+    "detailLinks": [
+      {
+        "href": "https://www.schlemmer.org/mizmorim-kammermusik-festival",
+        "label": "Details"
+      }
+    ]
+  },
+  {
+    "titleHtml": "<p class=\"schlemmer-text news\"><span class=\"highlight\"><strong>Bernd Alois Zimmermann&nbsp;Die Soldaten<br>‍</strong></span>Review Music by C. Raman Schlemmer<br>18 January 2024<br></p>",
+    "images": [
+      {
+        "src": "/images/Bernd-Alois-Zimmermann-Die-Soldaten-review-by-raman-schlemmer.png",
+        "srcset": "/images/Bernd-Alois-Zimmermann-Die-Soldaten-review-by-raman-schlemmer-p-500.png 500w, /images/Bernd-Alois-Zimmermann-Die-Soldaten-review-by-raman-schlemmer.png 800w",
+        "sizes": "(max-width: 479px) 87vw, 400px",
+        "alt": "Theodora Vischer with Annabelle Selldorf ",
+        "width": "400"
+      }
+    ],
+    "bodyHtml": "",
+    "detailLinks": [
+      {
+        "href": "https://www.schlemmer.org/die-soldaten",
+        "label": "Details"
+      }
+    ]
+  }
+]

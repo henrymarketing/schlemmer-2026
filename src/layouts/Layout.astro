@@ -1,0 +1,60 @@
+---
+import '../styles/globals.css';
+import Nav from '../components/Nav.astro';
+import Footer from '../components/Footer.astro';
+import Lightbox from '../components/Lightbox.astro';
+
+interface Props {
+  title: string;
+  description?: string;
+  ogImage?: string;
+  currentPath?: string;
+}
+
+const {
+  title,
+  description = 'The Oskar Schlemmer Theatre Archives. Bauhaus master — painter, sculptor, choreographer.',
+  ogImage = '/apple-touch-icon.jpg',
+  currentPath = Astro.url.pathname,
+} = Astro.props;
+
+const fullTitle = title === 'Oskar Schlemmer' ? title : `${title} — Oskar Schlemmer`;
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{fullTitle}</title>
+    <meta name="description" content={description} />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:image" content={ogImage} />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="shortcut icon" href="/favicon.jpg" type="image/jpeg" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.jpg" />
+    <link rel="stylesheet" href="/webflow.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Questrial&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-8BS1KDTMSE"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(...args: unknown[]) { window.dataLayer.push(args); }
+      gtag('js', new Date());
+      gtag('config', 'G-8BS1KDTMSE');
+    </script>
+  </head>
+  <body class="body-2">
+    <Nav currentPath={currentPath} />
+    <slot />
+    <Footer />
+    <Lightbox />
+  </body>
+</html>

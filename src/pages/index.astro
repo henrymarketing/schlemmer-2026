@@ -1,0 +1,14 @@
+---
+import Layout from '../layouts/Layout.astro';
+import HomeCarousel from '../components/HomeCarousel.astro';
+import slides from '../data/home-slides.json';
+---
+
+<Layout
+  title="Oskar Schlemmer"
+  description="Oskar Schlemmer was a German painter, sculptor, designer and choreographer associated with the Bauhaus school."
+  ogImage="https://cdn.prod.website-files.com/64d20a78755fe3e88cabcd55/65cfd4ad66024048984a2352_oskar-schlemmer-bauhaus-logo.png"
+  currentPath="/"
+>
+  <HomeCarousel slides={slides} />
+</Layout>

@@ -1,0 +1,439 @@
+---
+interface SlideImage {
+  src: string;
+  srcset?: string;
+  alt: string;
+  width?: string;
+  sizes?: string;
+  className?: string;
+  caption?: string;
+}
+
+interface Slide {
+  className?: string;
+  headingHtml?: string;
+  bodyHtml?: string;
+  images: SlideImage[];
+}
+
+interface Props {
+  slides: Slide[];
+}
+
+const { slides } = Astro.props;
+---
+
+<section class="cs-section">
+  <div class="cs-slider" id="carousel">
+
+    <div class="cs-track" id="carousel-track">
+      {slides.map((slide, i) => {
+        const isFirst = i === 0;
+        // Split layout only when heading is present (birthday/event slides)
+        // Caption-only slides (bodyHtml, no headingHtml) → centered with caption below
+        // Image-only slides → centered
+        const isSplit = !!slide.headingHtml;
+        const isCaption = !slide.headingHtml && !!slide.bodyHtml;
+        return (
+          <article
+            class={`cs-slide${isFirst ? ' cs-slide--active' : ''}`}
+            aria-hidden={!isFirst ? 'true' : undefined}
+          >
+            {isSplit ? (
+              <div class="cs-inner cs-inner--split">
+                <div class="cs-text">
+                  <h1 class="cs-heading" set:html={slide.headingHtml} />
+                  {slide.bodyHtml && <div class="cs-body" set:html={slide.bodyHtml} />}
+                </div>
+                {slide.images.length > 0 && (
+                  <div class="cs-media">
+                    {slide.images.map((img) => (
+                      <figure class="cs-figure">
+                        <img src={img.src} srcset={img.srcset} alt={img.alt} width={img.width} sizes={img.sizes} loading={isFirst ? 'eager' : 'lazy'} />
+                        {img.caption && <figcaption class="cs-caption caption">{img.caption}</figcaption>}
+                      </figure>
+                    ))}
+                  </div>
+                )}
+              </div>
+            ) : (
+              <div class="cs-inner cs-inner--centered">
+                <div class="cs-images-only">
+                  {slide.images.map((img) => (
+                    <img src={img.src} srcset={img.srcset} alt={img.alt} width={img.width} sizes={img.sizes} loading={isFirst ? 'eager' : 'lazy'} />
+                  ))}
+                </div>
+                {isCaption && <div class="cs-body cs-body--caption" set:html={slide.bodyHtml} />}
+              </div>
+            )}
+          </article>
+        );
+      })}
+    </div>
+
+    <!-- Arrows: absolute on desktop, relocated to bottom on mobile -->
+    <button class="cs-arrow cs-arrow--prev" id="carousel-prev" aria-label="Previous slide">‹</button>
+    <button class="cs-arrow cs-arrow--next" id="carousel-next" aria-label="Next slide">›</button>
+
+    <!-- Dots always at bottom-center -->
+    <div class="cs-dots" id="carousel-dots">
+      {slides.map((_, i) => (
+        <button
+          class={`carousel-dot${i === 0 ? ' active' : ''}`}
+          aria-label={`Go to slide ${i + 1}`}
+          data-index={i}
+        />
+      ))}
+    </div>
+
+  </div>
+</section>
+
+<script>
+  const track  = document.getElementById('carousel-track')!;
+  const dots   = document.querySelectorAll('.carousel-dot');
+  const slides = document.querySelectorAll<HTMLElement>('.cs-slide');
+  const total  = slides.length;
+  let current  = 0;
+  let paused   = false;
+  let timer: ReturnType<typeof setInterval>;
+
+  function goTo(idx: number) {
+    slides[current].classList.remove('cs-slide--active');
+    slides[current].setAttribute('aria-hidden', 'true');
+    dots[current].classList.remove('active');
+    current = (idx + total) % total;
+    slides[current].classList.add('cs-slide--active');
+    slides[current].removeAttribute('aria-hidden');
+    dots[current].classList.add('active');
+  }
+
+  function resetTimer() {
+    clearInterval(timer);
+    timer = setInterval(() => { if (!paused) goTo(current + 1); }, 10000);
+  }
+
+  track.addEventListener('mouseenter', () => { paused = true; });
+  track.addEventListener('mouseleave', () => { paused = false; });
+
+  document.getElementById('carousel-prev')!.addEventListener('click', () => { goTo(current - 1); resetTimer(); });
+  document.getElementById('carousel-next')!.addEventListener('click', () => { goTo(current + 1); resetTimer(); });
+  dots.forEach((dot, i) => dot.addEventListener('click', () => { goTo(i); resetTimer(); }));
+
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'ArrowRight') { goTo(current + 1); resetTimer(); }
+    if (e.key === 'ArrowLeft')  { goTo(current - 1); resetTimer(); }
+  });
+
+  resetTimer();
+</script>
+
+<style>
+  /* ─── Outer shell ─────────────────────────────────── */
+  .cs-section {
+    background: #000;
+  }
+
+  /* ─── Slider: fixed height, anchors arrows + dots ─── */
+  .cs-slider {
+    position: relative;
+    min-height: 85vh;
+  }
+
+  /* ─── Track fills slider height ──────────────────── */
+  .cs-track {
+    position: relative;
+    min-height: 85vh;
+  }
+
+  /* ─── All slides stacked via absolute overlay ────── */
+  .cs-slide {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transition: opacity 0.55s ease, visibility 0s linear 0.55s;
+    will-change: opacity;
+  }
+
+  .cs-slide--active {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+    transition: opacity 0.55s ease;
+  }
+
+  /* ─── Inner: max-width container ─────────────────── */
+  .cs-inner {
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 3rem 5.5rem; /* 5.5rem makes room for 4rem arrows + breathing room */
+    box-sizing: border-box;
+  }
+
+  /* Text-left + image-right two-column */
+  .cs-inner--split {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+  }
+
+  /* Image-only: centered */
+  .cs-inner--centered {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  /* ─── Text column ─────────────────────────────────── */
+  .cs-text {
+    flex: 0 0 54%;
+  }
+
+  .cs-heading {
+    font-family: "Century Gothic", "Questrial", sans-serif;
+    font-size: 1.4rem !important;
+    line-height: 1.55 !important;
+    font-weight: 400;
+    color: #fff;
+    margin: 0 0 1.25rem !important;
+  }
+
+  .cs-body {
+    color: #e2e2e2;
+    font-size: 0.9rem;
+    line-height: 1.75;
+  }
+
+  /* webflow gives .schlemmer-text column-count: 3 — reset inside carousel */
+  .cs-body :global(.schlemmer-text) {
+    column-count: 1 !important;
+    font-size: 0.9rem !important;
+    line-height: 1.75 !important;
+    margin-bottom: 1.25rem;
+  }
+
+  .cs-body :global(.schlemmer-button) {
+    display: inline-block;
+    margin-top: 0.25rem;
+  }
+
+  /* ─── Images column ───────────────────────────────── */
+  .cs-media {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.25rem;
+  }
+
+  .cs-figure {
+    margin: 0;
+    text-align: center;
+  }
+
+  .cs-figure img {
+    max-width: 100%;
+    max-height: 60vh;
+    object-fit: contain;
+    display: block;
+  }
+
+  .cs-caption {
+    margin-top: 0.5rem;
+    text-align: center;
+  }
+
+  /* ─── Image-only slides ───────────────────────────── */
+  .cs-images-only {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    width: 100%;
+    flex-wrap: wrap;
+  }
+
+  .cs-images-only img {
+    max-height: 76vh;
+    max-width: 46%;
+    object-fit: contain;
+    flex: 1 1 auto;
+  }
+
+  .cs-images-only:has(img:only-child) img {
+    max-width: 75%;
+  }
+
+  /* Caption below centered image */
+  .cs-body--caption {
+    margin-top: 1.5rem;
+    text-align: center;
+    font-size: 0.85rem;
+    color: rgba(255, 255, 255, 0.6);
+  }
+
+  .cs-body--caption :global(strong) {
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.7);
+  }
+
+  /* ─── Arrows ──────────────────────────────────────── */
+  .cs-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    /* push dots row out of the way — arrows ride at the actual center */
+    margin-top: -1.5rem; /* half of dots area so visual center aligns */
+    z-index: 10;
+    background: none;
+    border: none;
+    color: rgba(255, 255, 255, 0.4);
+    font-size: 2.75rem;
+    line-height: 1;
+    cursor: pointer;
+    width: 4rem;
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: color 0.2s;
+  }
+
+  .cs-arrow:hover {
+    color: rgba(255, 255, 255, 0.85);
+  }
+
+  .cs-arrow--prev { left: 0.5rem; }
+  .cs-arrow--next { right: 0.5rem; }
+
+  /* ─── Dots ────────────────────────────────────────── */
+  .cs-dots {
+    position: absolute;
+    bottom: 1.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10;
+    display: flex;
+    gap: 0.5rem;
+  }
+
+  .carousel-dot {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.3);
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    transition: background 0.2s, transform 0.2s;
+  }
+
+  .carousel-dot.active {
+    background: #fff;
+    transform: scale(1.5);
+  }
+
+  /* ─── Mobile (≤ 767px) ───────────────────────────── */
+  @media (max-width: 767px) {
+    /* No fixed height on mobile — content sets the height */
+    .cs-slider {
+      min-height: 0;
+      /* Reserve space at bottom for arrows + dots */
+      padding-bottom: 3.5rem;
+    }
+
+    .cs-track {
+      min-height: 0;
+    }
+
+    /* Inactive: fully hidden */
+    .cs-slide {
+      display: none;
+      position: static;
+    }
+
+    /* Active: block, in flow */
+    .cs-slide--active {
+      display: flex;
+      position: static;
+      opacity: 1;
+      visibility: visible;
+      pointer-events: auto;
+      transition: none;
+      flex-direction: column;
+    }
+
+    /* Tighter padding on mobile — arrows are at bottom now */
+    .cs-inner {
+      padding: 1.75rem 1.25rem 0.75rem;
+    }
+
+    .cs-inner--split {
+      flex-direction: column;
+      gap: 1.5rem;
+    }
+
+    .cs-text {
+      flex: none;
+      width: 100%;
+    }
+
+    .cs-heading {
+      font-size: 1.15rem !important;
+      line-height: 1.5 !important;
+      margin-bottom: 0.9rem !important;
+    }
+
+    .cs-media {
+      width: 100%;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .cs-figure img {
+      max-height: 42vw;
+    }
+
+    .cs-inner--centered {
+      min-height: 55vw;
+    }
+
+    .cs-images-only {
+      gap: 0.75rem;
+    }
+
+    .cs-images-only img,
+    .cs-images-only:has(img:only-child) img {
+      max-width: 100%;
+      max-height: 52vw;
+    }
+
+    /* On mobile: arrows sit at bottom-left and bottom-right of slider */
+    .cs-arrow {
+      position: absolute;
+      top: auto;
+      bottom: 0.5rem;
+      transform: none;
+      margin-top: 0;
+      font-size: 2rem;
+      width: 2.75rem;
+      height: 2.75rem;
+      color: rgba(255, 255, 255, 0.5);
+    }
+
+    .cs-arrow--prev { left: 1rem; }
+    .cs-arrow--next { right: 1rem; }
+
+    /* Dots: still absolute bottom-center, between the two arrows */
+    .cs-dots {
+      bottom: 1rem;
+    }
+  }
+</style>
