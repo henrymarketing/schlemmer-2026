@@ -97,8 +97,8 @@
     "className": "main-slide-6 w-slide",
     "images": [
       {
-        "src": "/images/DTB_3_Figurinen_Türk-Watermark.png",
-        "srcset": "/images/DTB_3_Figurinen_Türk-Watermark-p-500.png 500w, /images/DTB_3_Figurinen_Türk-Watermark-p-800.png 800w, /images/DTB_3_Figurinen_Türk-Watermark-p-1080.png 1080w, /images/DTB_3_Figurinen_Türk-Watermark.png 1200w",
+        "src": "/images/DTB_3_Figurinen_Turk-Watermark.png",
+        "srcset": "/images/DTB_3_Figurinen_Turk-Watermark-p-500.png 500w, /images/DTB_3_Figurinen_Turk-Watermark-p-800.png 800w, /images/DTB_3_Figurinen_Turk-Watermark-p-1080.png 1080w, /images/DTB_3_Figurinen_Turk-Watermark.png 1200w",
         "alt": "Oskar Schlemmer — Triadic Ballet figurines, Turkish suite",
         "width": "1195",
         "sizes": "(max-width: 767px) 100vw, (max-width: 991px) 728px, 940px"

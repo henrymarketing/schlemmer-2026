@@ -319,6 +319,11 @@
   opacity: 0.85;
 }
 
+/* HTML-based pages: reset webflow multi-column text to single column */
+.html-page .schlemmer-text {
+  column-count: 1 !important;
+}
+
 /* Reduced motion */
 @media (prefers-reduced-motion: reduce) {
   *,

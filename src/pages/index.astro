@@ -1,14 +1,206 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import HomeCarousel from '../components/HomeCarousel.astro';
-import slides from '../data/home-slides.json';
 ---
 
 <Layout
   title="Oskar Schlemmer"
   description="Oskar Schlemmer was a German painter, sculptor, designer and choreographer associated with the Bauhaus school."
-  ogImage="https://cdn.prod.website-files.com/64d20a78755fe3e88cabcd55/65cfd4ad66024048984a2352_oskar-schlemmer-bauhaus-logo.png"
+  ogImage="/images/oskar-schlemmer-ascona.jpg"
   currentPath="/"
 >
-  <HomeCarousel slides={slides} />
+  <main class="hero">
+    <div class="hero__inner">
+
+      <div class="hero__images">
+        <img
+          src="/images/oskar-schlemmer-ascona.jpg"
+          srcset="/images/oskar-schlemmer-ascona-p-500.jpg 500w, /images/oskar-schlemmer-ascona-p-800.jpg 800w, /images/oskar-schlemmer-ascona.jpg 843w"
+          sizes="(max-width: 767px) 80vw, 38vw"
+          alt="Oskar Schlemmer as Dancer in "The Triadic Ballet", 1922. Altered photograph"
+          class="hero__dancer"
+          loading="eager"
+          fetchpriority="high"
+        />
+        <img
+          src="/images/Bauhaus-Signet-Oskar-Schlemmer-black-background.gif"
+          alt="Oskar Schlemmer — Bauhaus Signet, 1922–1923"
+          class="hero__signet"
+          loading="eager"
+        />
+      </div>
+
+      <div class="hero__text">
+        <p class="hero__date">4 September 2026</p>
+        <h1 class="hero__heading">
+          Birthday anniversary of<br>Oskar Schlemmer<br>(1888&thinsp;&ndash;&thinsp;1943)
+        </h1>
+        <p class="hero__body">
+          On the occasion of his birthday, join C.&nbsp;Raman Schlemmer to remember his grandfather
+          Oskar Schlemmer, whose pioneering&nbsp;œuvre crossed the boundaries of painting, sculpture,
+          theatre, dance and design. His vision of the human figure in space, most famously realised
+          in&nbsp;"The Triadic Ballet" (1922) and the painting "Bauhaus Staircase" (1932), remains
+          an enduring contribution to modern art.
+        </p>
+        <div class="hero__ctas">
+          <a href="/slideshow" class="hero__btn">› View Works</a>
+          <a href="https://mint.schlemmer.org" target="_blank" rel="noopener noreferrer" class="hero__btn hero__btn--outline">› Mint a Bauhaus Signet</a>
+        </div>
+        <p class="hero__caption">Oskar Schlemmer / Jaïna Schlemmer</p>
+      </div>
+
+    </div>
+  </main>
 </Layout>
+
+<style>
+  .hero {
+    background: #000;
+    min-height: calc(100vh - 5rem);
+    display: flex;
+    align-items: center;
+  }
+
+  .hero__inner {
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 4rem 3rem;
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+  }
+
+  /* ─── Images column ─────────────────────── */
+  .hero__images {
+    flex: 0 0 42%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  .hero__dancer {
+    max-width: 100%;
+    max-height: 65vh;
+    object-fit: contain;
+    display: block;
+  }
+
+  .hero__signet {
+    width: 120px;
+    opacity: 0.85;
+  }
+
+  /* ─── Text column ───────────────────────── */
+  .hero__text {
+    flex: 1;
+  }
+
+  .hero__date {
+    font-size: 0.72rem;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.45);
+    margin: 0 0 1rem;
+  }
+
+  .hero__heading {
+    font-family: "Century Gothic", "Questrial", sans-serif;
+    font-size: 1.55rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #fff;
+    margin: 0 0 1.5rem;
+  }
+
+  .hero__body {
+    font-size: 0.9rem;
+    line-height: 1.8;
+    color: rgba(255, 255, 255, 0.7);
+    margin: 0 0 2rem;
+    max-width: 46ch;
+  }
+
+  .hero__ctas {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .hero__btn {
+    display: inline-block;
+    font-family: inherit;
+    font-size: 0.78rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #000;
+    background: #fff;
+    text-decoration: none;
+    padding: 0.7rem 1.6rem;
+    transition: opacity 0.2s;
+    white-space: nowrap;
+  }
+
+  .hero__btn:hover {
+    opacity: 0.75;
+  }
+
+  .hero__btn--outline {
+    background: transparent;
+    color: #fff;
+    border: 1px solid rgba(255, 255, 255, 0.35);
+  }
+
+  .hero__btn--outline:hover {
+    border-color: rgba(255, 255, 255, 0.7);
+    opacity: 1;
+  }
+
+  .hero__caption {
+    font-size: 0.68rem;
+    letter-spacing: 0.06em;
+    color: rgba(255, 255, 255, 0.3);
+    margin: 0;
+  }
+
+  /* ─── Mobile ────────────────────────────── */
+  @media (max-width: 767px) {
+    .hero {
+      min-height: auto;
+    }
+
+    .hero__inner {
+      flex-direction: column-reverse;
+      padding: 2.5rem 1.25rem 3rem;
+      gap: 2rem;
+    }
+
+    .hero__images {
+      flex: none;
+      width: 100%;
+      flex-direction: row;
+      align-items: flex-end;
+      justify-content: center;
+      gap: 1.5rem;
+    }
+
+    .hero__dancer {
+      max-height: 52vw;
+      max-width: 55%;
+    }
+
+    .hero__signet {
+      width: 80px;
+    }
+
+    .hero__heading {
+      font-size: 1.2rem;
+    }
+
+    .hero__body {
+      font-size: 0.875rem;
+      max-width: none;
+    }
+  }
+</style>

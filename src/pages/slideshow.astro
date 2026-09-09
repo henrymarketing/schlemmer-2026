@@ -1,0 +1,13 @@
+---
+import Layout from '../layouts/Layout.astro';
+import HomeCarousel from '../components/HomeCarousel.astro';
+import slides from '../data/home-slides.json';
+---
+
+<Layout
+  title="Works — Oskar Schlemmer"
+  description="A visual journey through the art and legacy of Oskar Schlemmer — paintings, sculptures, theatre costumes, and the Triadic Ballet."
+  currentPath="/slideshow"
+>
+  <HomeCarousel slides={slides} />
+</Layout>

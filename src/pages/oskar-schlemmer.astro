@@ -7,11 +7,44 @@ const html = readFileSync(resolve('src/data/html/oskar-schlemmer.html'), 'utf-8'
 ---
 
 <Layout
-  title="Oskar Schlemmer"
+  title="Oskar Schlemmer, Work and Life"
   description="From 1923 Oskar Schlemmer directed the Bauhaus theatre workshop and created the series of Bauhaus Dances, which toured in 1929."
   currentPath="/oskar-schlemmer"
 >
-  <section class="main-section schlemmer-page">
+  <section class="html-page">
     <div set:html={html} />
   </section>
 </Layout>
+
+<style>
+  .html-page {
+    background: #000;
+    padding: 3rem 0 6rem;
+  }
+
+  /* Override webflow flex centering on .main-section */
+  .html-page :global(.w-layout-blockcontainer),
+  .html-page :global(.w-container) {
+    max-width: 1100px;
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+    box-sizing: border-box;
+  }
+
+  .html-page :global(.triadic-ballet-container) {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+    box-sizing: border-box;
+  }
+
+  @media (max-width: 767px) {
+    .html-page :global(.w-layout-blockcontainer),
+    .html-page :global(.w-container),
+    .html-page :global(.triadic-ballet-container) {
+      padding-left: 1.25rem;
+      padding-right: 1.25rem;
+    }
+  }
+</style>

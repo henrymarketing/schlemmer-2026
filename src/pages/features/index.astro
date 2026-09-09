@@ -1,39 +1,142 @@
 ---
 import Layout from '../../layouts/Layout.astro';
 import entries from '../../data/features.json';
+
+const slugs = ['mizmorim-kammermusik-festival', 'die-soldaten'];
 ---
 
 <Layout
   title="Features"
-  description="Features of artists and figures of the arts."
+  description="Music reviews and features by C. Raman Schlemmer."
   currentPath="/features"
 >
-  <section class="main-section">
-    <div class="w-layout-blockcontainer features w-container">
-      <div class="text-block-2 white triadic-ballet communique">FEATURES</div>
+  <section class="lp">
+    <div class="lp__inner">
+      <h1 class="lp__title">Features</h1>
 
-      {entries.map((entry, i) => {
-        const slug = i === 0 ? 'mizmorim-kammermusik-festival' : 'die-soldaten';
-        return (
-          <div>
-            <div set:html={entry.titleHtml} />
-            {entry.thumbnail && (
-              <img
-                src={entry.thumbnail.src}
-                srcset={entry.thumbnail.srcset}
-                alt={entry.thumbnail.alt}
-                width={entry.thumbnail.width}
-                loading="lazy"
-                class="video-space"
-              />
+      <div class="features-grid">
+        {entries.map((entry, i) => (
+          <article class="feature-card">
+            {entry.images.length > 0 && (
+              <a href={`/features/${slugs[i]}`} class="feature-card__img-link">
+                <img
+                  src={entry.images[0].src}
+                  srcset={entry.images[0].srcset}
+                  sizes={entry.images[0].sizes}
+                  alt={entry.images[0].alt}
+                  width={entry.images[0].width}
+                  loading="lazy"
+                  class="feature-card__img"
+                />
+              </a>
             )}
-            {entry.bodyHtml && <p class="ute-schlemmer-caption rene-burri">{entry.bodyHtml}</p>}
-            <a href={`/features/${slug}`} class="schlemmer-button button-standard w-button">
-              Details
-            </a>
-          </div>
-        );
-      })}
+            <div class="feature-card__body">
+              <div class="feature-card__heading" set:html={entry.titleHtml} />
+              <a href={`/features/${slugs[i]}`} class="lp__btn">Details</a>
+            </div>
+          </article>
+        ))}
+      </div>
     </div>
   </section>
 </Layout>
+
+<style>
+  .lp {
+    background: #000;
+    padding: 3.5rem 0 6rem;
+  }
+
+  .lp__inner {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 2.5rem;
+  }
+
+  .lp__title {
+    font-family: "Century Gothic", "Questrial", sans-serif;
+    font-size: 0.68rem;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.35);
+    margin: 0 0 3rem;
+    padding-bottom: 1.25rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  }
+
+  .features-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3rem;
+  }
+
+  .feature-card {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+  }
+
+  .feature-card__img-link {
+    display: block;
+    overflow: hidden;
+  }
+
+  .feature-card__img {
+    width: 100%;
+    display: block;
+    transition: opacity 0.3s;
+  }
+
+  .feature-card__img-link:hover .feature-card__img {
+    opacity: 0.85;
+  }
+
+  .feature-card__body {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    flex: 1;
+  }
+
+  .feature-card__heading :global(.schlemmer-text) {
+    column-count: 1 !important;
+    font-size: 0.9rem !important;
+    line-height: 1.7 !important;
+    color: rgba(255, 255, 255, 0.8);
+    margin-bottom: 0.5em;
+  }
+
+  .feature-card__heading :global(.highlight) {
+    color: #fff;
+  }
+
+  .lp__btn {
+    align-self: flex-start;
+    display: inline-block;
+    font-size: 0.7rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.65);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    padding: 0.5rem 1.1rem;
+    text-decoration: none;
+    transition: border-color 0.2s, color 0.2s;
+  }
+
+  .lp__btn:hover {
+    color: #fff;
+    border-color: rgba(255, 255, 255, 0.6);
+  }
+
+  @media (max-width: 767px) {
+    .lp__inner {
+      padding: 0 1.25rem;
+    }
+
+    .features-grid {
+      grid-template-columns: 1fr;
+      gap: 2.5rem;
+    }
+  }
+</style>

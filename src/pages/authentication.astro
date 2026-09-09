@@ -4,29 +4,31 @@ import Layout from '../layouts/Layout.astro';
 
 <Layout
   title="Authentication"
-  description="Authentication of works by Oskar Schlemmer."
+  description="Authentication of works by Oskar Schlemmer — Application Form."
   currentPath="/authentication"
 >
-  <section class="main-section">
-    <div class="w-layout-blockcontainer container-regular w-container">
-      <div class="text-block-2 white triadic-ballet">
-        Authentication of Works by Oskar Schlemmer<br />Application Form
-      </div>
+  <section class="auth-page">
+    <div class="auth-page__inner">
 
-      <p class="schlemmer-text one formspace formheadline">
-        <strong class="formheadline">
-          Invitation to collectors, auction houses, art dealers, art historians and museums
-        </strong>
+      <h1 class="auth-page__title">
+        Authentication of Works<br>by Oskar Schlemmer
+      </h1>
+      <p class="auth-page__subtitle">Application Form</p>
+
+      <div class="auth-page__rule"></div>
+
+      <p class="auth-page__lead">
+        <strong>Invitation to collectors, auction houses, art dealers, art historians and museums</strong>
       </p>
-      <p class="schlemmer-text one formspace _18">
+      <p class="auth-page__lead">
         Call for information on works of art, photographs and documents by Oskar Schlemmer
-        that have not yet been registered
+        that have not yet been registered.
       </p>
 
-      <div class="schlemmer-text one formspace2" style="padding: 2rem 0;">
-        <p>
-          To submit an authentication request, please contact the Secretariat directly:
-        </p>
+      <div class="auth-page__rule"></div>
+
+      <div class="auth-page__block">
+        <p>To submit an authentication request, please contact the Secretariat directly:</p>
         <p>
           <strong>Secretariat</strong><br />
           Vadakyil Changaramkumarath Mullassery<br />
@@ -37,25 +39,116 @@ import Layout from '../layouts/Layout.astro';
           and a full description of your request (authentication, reproduction/publication,
           provenance research, art market, academia, media, or trademark).
         </p>
+        <p>All information will be treated confidentially.</p>
+      </div>
+
+      <div class="auth-page__rule"></div>
+
+      <div class="auth-page__block">
         <p>
-          All information will be treated confidentially.
+          Please fill in all details. Forms that are incomplete, with mandatory information
+          not filled in, cannot be considered and will not be followed up.
+        </p>
+        <p>
+          Please contact us with information on previously unrecorded original works by
+          Oskar Schlemmer. Information on changes of ownership, as well as information that
+          was not correctly published in 1965 or 1979, can also be submitted.
+        </p>
+        <p>We will, of course, treat all information confidentially.</p>
+        <p>
+          Further information on Catalogues Raisonnés of artworks by Oskar Schlemmer,
+          <a href="/catalogue-raisonne" class="auth-page__link">see Oskar Schlemmer Literature</a>.
+        </p>
+        <p>
+          In the future, the internally updated catalogues raisonné will serve as an
+          authoritative source of information on Oskar Schlemmer for researchers, museums,
+          collectors, and art dealers upon request.
         </p>
       </div>
 
-      <p class="schlemmer-text one formspace2">
-        Please fill in all details. Forms that are incomplete, with mandatory information
-        not filled in, cannot be considered and will not be followed up.<br /><br />
-        Please contact us with information on previously unrecorded original works by
-        Oskar Schlemmer. Information on changes of ownership, as well as information that
-        was not correctly published in 1965 or 1979, can also be submitted.<br /><br />
-        We will, of course, treat all information confidentially.<br /><br />
-        Further information on Catalogues Raisonnés of artworks by Oskar Schlemmer,{' '}
-        <a href="/catalogue-raisonne" class="schlemmer-link">see Oskar Schlemmer Literature</a>
-        <br /><br />
-        In the future, the internally updated catalogues raisonné will serve as an
-        authoritative source of information on Oskar Schlemmer for researchers, museums,
-        collectors, and art dealers upon request.
-      </p>
     </div>
   </section>
 </Layout>
+
+<style>
+  .auth-page {
+    background: #000;
+    padding: 3.5rem 0 7rem;
+  }
+
+  .auth-page__inner {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 0 2.5rem;
+  }
+
+  .auth-page__title {
+    font-family: "Century Gothic", "Questrial", sans-serif;
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 1.4;
+    color: #fff;
+    margin: 0 0 0.5rem;
+  }
+
+  .auth-page__subtitle {
+    font-size: 0.68rem;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.35);
+    margin: 0 0 2.5rem;
+  }
+
+  .auth-page__rule {
+    height: 1px;
+    background: rgba(255, 255, 255, 0.1);
+    margin: 2rem 0;
+  }
+
+  .auth-page__lead {
+    font-size: 0.95rem;
+    line-height: 1.75;
+    color: rgba(255, 255, 255, 0.8);
+    margin: 0 0 1em;
+  }
+
+  .auth-page__lead strong {
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.9);
+  }
+
+  .auth-page__block {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+  }
+
+  .auth-page__block p {
+    font-size: 0.9rem;
+    line-height: 1.8;
+    color: rgba(255, 255, 255, 0.65);
+    margin: 0;
+  }
+
+  .auth-page__block strong {
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.85);
+  }
+
+  .auth-page__link {
+    color: rgba(255, 255, 255, 0.75);
+    text-decoration: underline;
+    text-underline-offset: 3px;
+    text-decoration-color: rgba(255, 255, 255, 0.3);
+  }
+
+  .auth-page__link:hover {
+    text-decoration-color: rgba(255, 255, 255, 0.7);
+  }
+
+  @media (max-width: 767px) {
+    .auth-page__inner {
+      padding: 0 1.25rem;
+    }
+  }
+</style>
