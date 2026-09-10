@@ -13,6 +13,14 @@
         "alt": "Frank Gehry on his 90th birthday with Daniel Barenboim, Berlin, 28 February 2019",
         "srcset": "/images/Frank-Gehry-on-his-90th-birthday-with-Daniel-Barenboim-Berlin-28-February-2019-p-500.png 500w, /images/Frank-Gehry-on-his-90th-birthday-with-Daniel-Barenboim-Berlin-28-February-2019-p-800.png 800w, /images/Frank-Gehry-on-his-90th-birthday-with-Daniel-Barenboim-Berlin-28-February-2019.png 1080w",
         "sizes": "(max-width: 767px) 100vw, 50vw"
+      },
+      {
+        "src": "/images/The-Guggenheim-Museum-Bilbao-Spain.png",
+        "alt": "Guggenheim Museum Bilbao, Spain — designed by Frank Gehry",
+        "caption": "Guggenheim Museum Bilbao, Spain — designed by Frank Gehry",
+        "width": "540",
+        "sizes": "(max-width: 767px) 100vw, 50vw",
+        "srcset": "/images/The-Guggenheim-Museum-Bilbao-Spain-p-500.png 500w, /images/The-Guggenheim-Museum-Bilbao-Spain.png 1080w"
       }
     ],
     "bodyHtml": "",
@@ -58,6 +66,14 @@
         "alt": "Robert Wilson, theatre director and playwright",
         "srcset": "/images/robert-wilson-theatre-directorand-playwright-p-500.png 500w, /images/robert-wilson-theatre-directorand-playwright.png 800w",
         "sizes": "(max-width: 767px) 100vw, 50vw"
+      },
+      {
+        "src": "/images/robert-wilson-theatre-directorand-play-writer.png",
+        "alt": "Robert Wilson, theatre director and playwright",
+        "caption": "Robert Wilson, theatre director and playwright",
+        "width": "540",
+        "sizes": "(max-width: 767px) 100vw, 50vw",
+        "srcset": "/images/robert-wilson-theatre-directorand-play-writer-p-500.png 500w, /images/robert-wilson-theatre-directorand-play-writer.png 1080w"
       }
     ],
     "bodyHtml": "",
@@ -115,6 +131,22 @@
   {
     "titleHtml": "<p class=\"schlemmer-text news\"><span class=\"highlight\">C. Harish </span><br>1960 – 7 February 2024<br>Son of Sree C. Parankutty and Smt. Sathirathnam Parankutty<br>Changaramkumarath Family<br>Mullassery, Kerala, India<br>‍<br>Cousin brother of C. Raman Schlemmer<br><br>C. Harish is survived by his mother Sathirathnam, wife Beena, sons C. H. Hiran (Babaloo)<br>and C. H. Priyank (Bhavan) <br><br>C. Harish with his wife Beena on traditional Kerala swing, Malabar House, Fort Cochin,<br>Kochi, Kerala, India<br>‍<br>Photo: C. Raman Schlemmer<br>‍<br>September 2014<br>C. Harish and C. Raman Schlemmer on traditional Kerala swing, Malabar House, Fort<br>Cochin, Kochi, Kerala, India<br>September 2014<br>‍<br>Photo: Photo Archive C. Raman Schlemmer<br></p>",
     "images": [
+      {
+        "src": "/images/raman-schlemmer-1.png",
+        "alt": "C. Raman Schlemmer",
+        "caption": "C. Raman Schlemmer",
+        "width": "540",
+        "sizes": "(max-width: 767px) 100vw, 50vw",
+        "srcset": "/images/raman-schlemmer-1-p-500.png 500w, /images/raman-schlemmer-1.png 1080w"
+      },
+      {
+        "src": "/images/raman-schlemmer-2.png",
+        "alt": "C. Raman Schlemmer",
+        "caption": "C. Raman Schlemmer",
+        "width": "540",
+        "sizes": "(max-width: 767px) 100vw, 50vw",
+        "srcset": "/images/raman-schlemmer-2-p-500.png 500w, /images/raman-schlemmer-2.png 1080w"
+      },
       {
         "src": "/images/C-Harish-12.02.2024-ritual.jpeg",
         "alt": "C. Harish during ritual ceremony, February 2024",
