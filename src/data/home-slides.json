@@ -1,29 +1,6 @@
 [
   {
     "className": "main-slide-1 w-slide",
-    "headingHtml": "4 September 2026<br><br>Birthday anniversary of Oskar Schlemmer (1888 – 1943)",
-    "bodyHtml": "<p class=\"schlemmer-text raman\">On the occasion of his birthday, join C. Raman Schlemmer to remember his grandfather Oskar Schlemmer, whose pioneering œuvre crossed the boundaries of painting, sculpture, theatre, dance and design. His vision of the human figure in space, most famously realised in the dance performance “The Triadic Ballet” (1922), the “Bauhaus Dances”, the painting “Bauhaus Staircase” (1932), and noted in his diaries and writings, remains an enduring contribution to modern art.</p><a href=\"https://mint.schlemmer.org\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"schlemmer-button button-standard w-button\">› Mint a Bauhaus Signet</a>",
-    "images": [
-      {
-        "src": "/images/oskar-schlemmer-ascona.jpg",
-        "srcset": "/images/oskar-schlemmer-ascona-p-500.jpg 500w, /images/oskar-schlemmer-ascona-p-800.jpg 800w, /images/oskar-schlemmer-ascona.jpg 843w",
-        "alt": "Oskar Schlemmer as Dancer in “The Triadic Ballet”, 1922. Altered photograph",
-        "caption": "Oskar Schlemmer / Jaïna Schlemmer",
-        "width": "471",
-        "sizes": "380px",
-        "className": "image-3 april"
-      },
-      {
-        "src": "/images/Bauhaus-Signet-Oskar-Schlemmer-black-background.gif",
-        "alt": "Oskar Schlemmer “Bauhaus Signet”, 1922–1923, Bauhaus Weimar",
-        "caption": "Oskar Schlemmer “Bauhaus Signet”, 1922–1923, Bauhaus Weimar",
-        "width": "260",
-        "className": "image-3 april"
-      }
-    ]
-  },
-  {
-    "className": "main-slide-1 w-slide",
     "bodyHtml": "<strong class=\"bold-text-3\">Oskar Schlemmer<br><em>Abstrakte Figur, Freiplastik G |Abstract Figure, Sculpture in the Round G,</em>1921/1923<br><br></strong><strong>‍</strong>‍<br>",
     "images": [
       {
