@@ -1,4 +1,5 @@
 ---
+export const prerender = true;
 import Layout from '../layouts/Layout.astro';
 ---
 
@@ -27,7 +28,14 @@ import Layout from '../layouts/Layout.astro';
 
       <div class="auth-page__rule"></div>
 
-      <form class="auth-form" method="get" action="">
+      <div id="auth-success" class="auth-success" hidden>
+        <p>Thank you — your enquiry has been received. We will be in touch.</p>
+      </div>
+      <div id="auth-error" class="auth-error" hidden>
+        <p>Something went wrong. Please try again or email us directly.</p>
+      </div>
+
+      <form class="auth-form" id="auth-form" method="post" action="/api/contact" novalidate>
 
         <div class="auth-form__row">
           <div class="auth-form__field">
@@ -122,9 +130,44 @@ import Layout from '../layouts/Layout.astro';
           <span>I declare the information provided is correct. *</span>
         </label>
 
-        <button type="submit" class="btn-primary auth-form__submit">Submit</button>
+        <button type="submit" class="btn-primary auth-form__submit" id="auth-submit">Submit</button>
 
       </form>
+
+      <script>
+        const form   = document.getElementById('auth-form') as HTMLFormElement;
+        const submit = document.getElementById('auth-submit') as HTMLButtonElement;
+        const success = document.getElementById('auth-success') as HTMLElement;
+        const errorBox = document.getElementById('auth-error') as HTMLElement;
+
+        form.addEventListener('submit', async (e) => {
+          e.preventDefault();
+          if (!form.checkValidity()) { form.reportValidity(); return; }
+
+          submit.disabled = true;
+          submit.textContent = 'Sending…';
+          errorBox.hidden = true;
+
+          try {
+            const res = await fetch('/api/contact', {
+              method: 'POST',
+              body: new FormData(form),
+            });
+            if (res.ok) {
+              form.hidden = true;
+              success.hidden = false;
+            } else {
+              errorBox.hidden = false;
+              submit.disabled = false;
+              submit.textContent = 'Submit';
+            }
+          } catch {
+            errorBox.hidden = false;
+            submit.disabled = false;
+            submit.textContent = 'Submit';
+          }
+        });
+      </script>
 
       <div class="auth-page__rule"></div>
 
@@ -225,6 +268,30 @@ import Layout from '../layouts/Layout.astro';
 
   .auth-page__link:hover {
     text-decoration-color: rgba(255, 255, 255, 0.7);
+  }
+
+  /* ─── Success / error ──────────────────────── */
+  .auth-success,
+  .auth-error {
+    padding: 1.25rem 1.5rem;
+    margin-bottom: 1.5rem;
+    font-size: 0.9rem;
+    line-height: 1.7;
+  }
+
+  .auth-success {
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    color: rgba(255, 255, 255, 0.85);
+  }
+
+  .auth-error {
+    border: 1px solid rgba(220, 80, 80, 0.5);
+    color: rgba(220, 100, 100, 0.9);
+  }
+
+  .auth-success p,
+  .auth-error p {
+    margin: 0;
   }
 
   /* ─── Form ─────────────────────────────────── */
