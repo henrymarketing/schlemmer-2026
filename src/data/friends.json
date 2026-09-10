@@ -71,15 +71,15 @@
     "titleHtml": "<p class=\"schlemmer-text news\">‍<span class=\"highlight\"><strong>René Burri: In Deutschland <br>‍</strong></span>Kunsthalle Erfurt, Germany<br>until 11 February 2024<br>‍<br>René Burri 1933 - 2014<br>Member of Magnum Photo<br><br>Images: René Burri visiting the Chapel of Ronchamp, France, designed by Le Corbusier. René Burri<br>photographed Le Corbusier during construction of the chapel in the 1950s. C. Raman<br>Schlemmer, who accompanied Claude and René Burri to Ronchamp on 8 September 2013,<br>has been visiting the chapel since his childhood.<br><br>The Chapel Notre-Dame du Haut of Ronchamp is listed on the&nbsp;<a href=\"https://en.wikipedia.org/wiki/World_Heritage_Site\" class=\"schlemmer-link\">UNESCO&nbsp;World Heritage</a><span class=\"text-span-2\"> Site</span><br></p>",
     "images": [
       {
-        "src": "/images/Raman-Schlemmer-René-Burri-at-Chapel-of-Ronchamp-designed-by-Corbusier-.jpg",
-        "srcset": "/images/Raman-Schlemmer-René-Burri-at-Chapel-of-Ronchamp-designed-by-Corbusier-p-500.jpg 500w, /images/Raman-Schlemmer-René-Burri-at-Chapel-of-Ronchamp-designed-by-Corbusier-.jpg 593w",
+        "src": "/images/Raman-Schlemmer-Rene-Burri-at-Chapel-of-Ronchamp-designed-by-Corbusier.jpg",
+        "srcset": "/images/Raman-Schlemmer-Rene-Burri-at-Chapel-of-Ronchamp-designed-by-Corbusier-p-500.jpg 500w, /images/Raman-Schlemmer-Rene-Burri-at-Chapel-of-Ronchamp-designed-by-Corbusier.jpg 593w",
         "sizes": "(max-width: 479px) 90vw, (max-width: 767px) 77vw, 400px",
         "alt": "Artist Rene Burri photographing",
         "width": "400"
       },
       {
-        "src": "/images/René-Burri-at-Chapel-of-Ronchamp-designed-by-Corbusier-.jpg",
-        "srcset": "/images/René-Burri-at-Chapel-of-Ronchamp-designed-by-Corbusier-p-500.jpg 500w, /images/René-Burri-at-Chapel-of-Ronchamp-designed-by-Corbusier-.jpg 800w",
+        "src": "/images/Rene-Burri-at-Chapel-of-Ronchamp-designed-by-Corbusier.jpg",
+        "srcset": "/images/Rene-Burri-at-Chapel-of-Ronchamp-designed-by-Corbusier-p-500.jpg 500w, /images/Rene-Burri-at-Chapel-of-Ronchamp-designed-by-Corbusier.jpg 800w",
         "sizes": "(max-width: 479px) 90vw, (max-width: 767px) 77vw, 400px",
         "alt": "Photographer René Burri in Chapel of Ronchamp designed by Le Corbusier",
         "width": "400"
@@ -145,8 +145,8 @@
     "titleHtml": "<p class=\"schlemmer-text news\"><span class=\"highlight\"><strong>Wolfgang Laib<br>\"</strong>...e vidi cose che ridire né sa né può…\"</span><br>Galleria Lia Rumma <em><br></em>via Stilicone 19, Milan, Italy<em><br></em>25 October 2023 - 13 January 2024<br></p>",
     "images": [
       {
-        "src": "/images/Wolfgang-Laib-...e-vidi-cose-che-ridire-né-sa-né-può…-.jpg",
-        "srcset": "/images/Wolfgang-Laib-...e-vidi-cose-che-ridire-né-sa-né-può…-p-500.jpg 500w, /images/Wolfgang-Laib-...e-vidi-cose-che-ridire-né-sa-né-può…-p-800.jpg 800w, /images/Wolfgang-Laib-...e-vidi-cose-che-ridire-né-sa-né-può…-p-1080.jpg 1080w, /images/Wolfgang-Laib-...e-vidi-cose-che-ridire-né-sa-né-può…-.jpg 1130w",
+        "src": "/images/Wolfgang-Laib-Lia-Rumma-e-vidi-cose.jpg",
+        "srcset": "/images/Wolfgang-Laib-Lia-Rumma-e-vidi-cose-p-500.jpg 500w, /images/Wolfgang-Laib-Lia-Rumma-e-vidi-cose-p-800.jpg 800w, /images/Wolfgang-Laib-Lia-Rumma-e-vidi-cose-p-1080.jpg 1080w, /images/Wolfgang-Laib-Lia-Rumma-e-vidi-cose.jpg 1130w",
         "sizes": "(max-width: 479px) 90vw, (max-width: 767px) 77vw, 400px",
         "alt": "Artist Wolfgang Laib next to his installation at the Galleria Lia Rumma",
         "width": "400"
@@ -244,8 +244,8 @@
     "titleHtml": "<p class=\"schlemmer-text news\"><span class=\"highlight\"><strong>Lyonel Feininger&nbsp;<br></strong></span>Schirn Kunsthalle <br>Römerberg, Frankfurt am Main, Germany <strong><br></strong>27 October 2023 – 18 February 2024<br>‍<br>The first major retrospective of the artist in Germany in over 25 years! <br></p>",
     "images": [
       {
-        "src": "/images/Oskar-Schlemmer-Feininger-Stölzl-1926.jpg",
-        "srcset": "/images/Oskar-Schlemmer-Feininger-Stölzl-1926-p-500.jpg 500w, /images/Oskar-Schlemmer-Feininger-Stölzl-1926.jpg 794w",
+        "src": "/images/Oskar-Schlemmer-Feininger-Stoelzl-1926.jpg",
+        "srcset": "/images/Oskar-Schlemmer-Feininger-Stoelzl-1926-p-500.jpg 500w, /images/Oskar-Schlemmer-Feininger-Stoelzl-1926.jpg 794w",
         "sizes": "(max-width: 479px) 90vw, (max-width: 767px) 77vw, 400px",
         "alt": "Lyonel Feininger, together with Gunta Stölzl  and Oskar Schlemmer",
         "caption": "Lyonel Feiniger, Gunta Stölzl, and Oskar Schlemmer, 1926",
