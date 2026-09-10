@@ -5,7 +5,7 @@ import Layout from '../layouts/Layout.astro';
 <Layout
   title="Oskar Schlemmer"
   description="Oskar Schlemmer was a German painter, sculptor, designer and choreographer associated with the Bauhaus school."
-  ogImage="/images/oskar-schlemmer-ascona.jpg"
+  ogImage="/images/OS-DTB-as-Dancer-turkish-Photo-DO01179.jpg"
   currentPath="/"
 >
   <main class="hero">
@@ -13,20 +13,21 @@ import Layout from '../layouts/Layout.astro';
 
       <div class="hero__images">
         <img
-          src="/images/oskar-schlemmer-ascona.jpg"
-          srcset="/images/oskar-schlemmer-ascona-p-500.jpg 500w, /images/oskar-schlemmer-ascona-p-800.jpg 800w, /images/oskar-schlemmer-ascona.jpg 843w"
-          sizes="(max-width: 767px) 80vw, 38vw"
-          alt="Oskar Schlemmer as Dancer in "The Triadic Ballet", 1922. Altered photograph"
+          src="/images/OS-DTB-as-Dancer-turkish-Photo-DO01179.jpg"
+          alt="Oskar Schlemmer as Dancer in The Triadic Ballet, Turkish Suite"
           class="hero__dancer"
           loading="eager"
           fetchpriority="high"
         />
-        <img
-          src="/images/Bauhaus-Signet-Oskar-Schlemmer-black-background.gif"
-          alt="Oskar Schlemmer — Bauhaus Signet, 1922–1923"
-          class="hero__signet"
-          loading="eager"
-        />
+        <div class="hero__image-sep"></div>
+        <a href="https://mint.schlemmer.org" target="_blank" rel="noopener noreferrer" class="hero__signet-link">
+          <img
+            src="/images/oskar-schlemmer-bauhaus-logo.png"
+            alt="Oskar Schlemmer — Bauhaus Signet, 1922–1923"
+            class="hero__signet"
+            loading="eager"
+          />
+        </a>
       </div>
 
       <div class="hero__text">
@@ -38,8 +39,9 @@ import Layout from '../layouts/Layout.astro';
           On the occasion of his birthday, join C.&nbsp;Raman Schlemmer to remember his grandfather
           Oskar Schlemmer, whose pioneering&nbsp;œuvre crossed the boundaries of painting, sculpture,
           theatre, dance and design. His vision of the human figure in space, most famously realised
-          in&nbsp;"The Triadic Ballet" (1922) and the painting "Bauhaus Staircase" (1932), remains
-          an enduring contribution to modern art.
+          in the dance performance&nbsp;"The Triadic Ballet" (1922), the "Bauhaus Dances", the painting
+          "Bauhaus Staircase" (1932), and noted in his diaries and writings, remains an enduring
+          contribution to modern art.
         </p>
         <div class="hero__ctas">
           <a href="/slideshow" class="hero__btn">› View Works</a>
@@ -86,9 +88,25 @@ import Layout from '../layouts/Layout.astro';
     display: block;
   }
 
-  .hero__signet {
-    width: 120px;
+  .hero__image-sep {
+    width: 60%;
+    height: 1px;
+    background: rgba(255, 255, 255, 0.12);
+  }
+
+  .hero__signet-link {
+    display: block;
     opacity: 0.85;
+    transition: opacity 0.2s;
+  }
+
+  .hero__signet-link:hover {
+    opacity: 1;
+  }
+
+  .hero__signet {
+    width: 140px;
+    display: block;
   }
 
   /* ─── Text column ───────────────────────── */
@@ -188,6 +206,10 @@ import Layout from '../layouts/Layout.astro';
     .hero__dancer {
       max-height: 52vw;
       max-width: 55%;
+    }
+
+    .hero__image-sep {
+      display: none;
     }
 
     .hero__signet {
