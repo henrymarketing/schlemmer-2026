@@ -11,7 +11,31 @@ const html = readFileSync(resolve('src/data/html/imprint.html'), 'utf-8');
   description="Legal details, copyright information, and disclaimers."
   currentPath="/imprint"
 >
-  <section class="main-section imprint">
+  <section class="html-page">
     <div set:html={html} />
   </section>
 </Layout>
+
+<style>
+  .html-page {
+    background: #000;
+    padding: 3rem 0 6rem;
+  }
+
+  .html-page :global(.w-layout-blockcontainer),
+  .html-page :global(.w-container) {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+    box-sizing: border-box;
+  }
+
+  @media (max-width: 767px) {
+    .html-page :global(.w-layout-blockcontainer),
+    .html-page :global(.w-container) {
+      padding-left: 1.25rem;
+      padding-right: 1.25rem;
+    }
+  }
+</style>
