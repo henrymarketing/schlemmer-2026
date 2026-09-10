@@ -102,6 +102,25 @@
   color: rgba(255, 255, 255, 0.5);
 }
 
+.nav-overlay__close {
+  position: absolute;
+  top: 1.5rem;
+  right: 2rem;
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 2rem;
+  line-height: 1;
+  cursor: pointer;
+  padding: 0.25rem 0.5rem;
+  opacity: 0.55;
+  transition: opacity 0.2s;
+}
+
+.nav-overlay__close:hover {
+  opacity: 1;
+}
+
 /* Lightbox overlay */
 .lightbox {
   position: fixed;

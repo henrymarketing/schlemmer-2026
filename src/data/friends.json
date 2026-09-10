@@ -41,7 +41,24 @@
   },
   {
     "titleHtml": "<p class=\"schlemmer-text news\"><span class=\"highlight\"><strong>Le Figaro “Jeff Wall, l’homme invisible de Vancouver”<br></strong></span>9 February, 2024<br>©Valerie Duponchelle, Le Figaro<br></p>",
-    "images": [],
+    "images": [
+      {
+        "src": "/images/Jeff-Wall-beyeler-basel.png",
+        "srcset": "/images/Jeff-Wall-beyeler-basel-p-500.png 500w, /images/Jeff-Wall-beyeler-basel.png 1080w",
+        "sizes": "(max-width: 767px) 100vw, 50vw",
+        "alt": "Jeff Wall exhibition at Fondation Beyeler, Basel",
+        "caption": "Jeff Wall — Fondation Beyeler, Basel",
+        "width": "540"
+      },
+      {
+        "src": "/images/Jeff-Wall-exhibition-at-fondation-beyeler-basel.png",
+        "srcset": "/images/Jeff-Wall-exhibition-at-fondation-beyeler-basel-p-500.png 500w, /images/Jeff-Wall-exhibition-at-fondation-beyeler-basel.png 1080w",
+        "sizes": "(max-width: 767px) 100vw, 50vw",
+        "alt": "Jeff Wall — exhibition at Fondation Beyeler, Basel",
+        "caption": "Jeff Wall — Fondation Beyeler, Basel",
+        "width": "540"
+      }
+    ],
     "bodyHtml": "",
     "detailLinks": [
       {
