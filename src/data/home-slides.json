@@ -52,6 +52,7 @@
   },
   {
     "className": "main-slide-5 w-slide",
+    "bgColor": "#ffeb6f",
     "images": [
       {
         "src": "/images/oskar-schlemmer-gelbe-figur-watermark.jpg",
@@ -72,6 +73,7 @@
   },
   {
     "className": "main-slide-6 w-slide",
+    "bgColor": "#eec2cb",
     "images": [
       {
         "src": "/images/DTB_3_Figurinen_Turk-Watermark.png",
@@ -155,6 +157,7 @@
   },
   {
     "className": "black-test w-slide",
+    "bgColor": "#141414",
     "images": [
       {
         "src": "/images/schlemmer-triadisch-ballet-baton-guy-watermark.jpg",

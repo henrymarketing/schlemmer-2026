@@ -11,6 +11,7 @@ interface SlideImage {
 
 interface Slide {
   className?: string;
+  bgColor?: string;
   headingHtml?: string;
   bodyHtml?: string;
   images: SlideImage[];
@@ -38,6 +39,7 @@ const { slides } = Astro.props;
           <article
             class={`cs-slide${isFirst ? ' cs-slide--active' : ''}`}
             aria-hidden={!isFirst ? 'true' : undefined}
+            data-bg={slide.bgColor ?? '#000'}
           >
             {isSplit ? (
               <div class="cs-inner cs-inner--split">
@@ -90,13 +92,18 @@ const { slides } = Astro.props;
 </section>
 
 <script>
-  const track  = document.getElementById('carousel-track')!;
-  const dots   = document.querySelectorAll('.carousel-dot');
-  const slides = document.querySelectorAll<HTMLElement>('.cs-slide');
-  const total  = slides.length;
-  let current  = 0;
-  let paused   = false;
+  const track   = document.getElementById('carousel-track')!;
+  const section = track.closest('.cs-section') as HTMLElement;
+  const dots    = document.querySelectorAll('.carousel-dot');
+  const slides  = document.querySelectorAll<HTMLElement>('.cs-slide');
+  const total   = slides.length;
+  let current   = 0;
+  let paused    = false;
   let timer: ReturnType<typeof setInterval>;
+
+  function setSectionBg(slide: HTMLElement) {
+    section.style.backgroundColor = slide.dataset.bg ?? '#000';
+  }
 
   function goTo(idx: number) {
     slides[current].classList.remove('cs-slide--active');
@@ -106,7 +113,10 @@ const { slides } = Astro.props;
     slides[current].classList.add('cs-slide--active');
     slides[current].removeAttribute('aria-hidden');
     dots[current].classList.add('active');
+    setSectionBg(slides[current]);
   }
+
+  setSectionBg(slides[current]);
 
   function resetTimer() {
     clearInterval(timer);
@@ -132,6 +142,7 @@ const { slides } = Astro.props;
   /* ─── Outer shell ─────────────────────────────────── */
   .cs-section {
     background: #000;
+    transition: background-color 0.55s ease;
   }
 
   /* ─── Slider: fixed height, anchors arrows + dots ─── */
