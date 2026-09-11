@@ -1,6 +1,5 @@
-export const prerender = false;
+export const config = { runtime: 'edge' };
 
-import type { APIRoute } from 'astro';
 import { Resend } from 'resend';
 
 const RECIPIENT = 'archivum@schlemmer.org';
@@ -17,37 +16,41 @@ const CHECKBOXES = [
 ] as const;
 
 const CHECKBOX_LABELS: Record<string, string> = {
-  'Authentication':          'Authentication Application',
-  'Reproduction-Publication':'Reproduction, Publication Application',
-  'Provenance-Research':     'Provenance Research',
-  'Art-Market':              'Art Market',
-  'Academia':                'Academia',
-  'Media':                   'Media',
-  'Trademark-Request':       'Trademark Request',
+  'Authentication':           'Authentication Application',
+  'Reproduction-Publication': 'Reproduction, Publication Application',
+  'Provenance-Research':      'Provenance Research',
+  'Art-Market':               'Art Market',
+  'Academia':                 'Academia',
+  'Media':                    'Media',
+  'Trademark-Request':        'Trademark Request',
 };
 
-export const POST: APIRoute = async ({ request }) => {
-  const resend = new Resend(import.meta.env.RESEND_API_KEY);
+export default async function handler(req: Request): Promise<Response> {
+  if (req.method !== 'POST') {
+    return new Response(JSON.stringify({ error: 'Method not allowed' }), { status: 405 });
+  }
+
+  const resend = new Resend(process.env.RESEND_API_KEY);
 
   let body: FormData;
   try {
-    body = await request.formData();
+    body = await req.formData();
   } catch {
     return new Response(JSON.stringify({ error: 'Invalid request' }), { status: 400 });
   }
 
   const get = (key: string) => (body.get(key) as string | null)?.trim() ?? '';
 
-  const firstName  = get('First-Name');
-  const lastName   = get('Last-Name');
-  const email      = get('Email');
-  const telephone  = get('Telephone-Contact-including-country-code');
+  const firstName   = get('First-Name');
+  const lastName    = get('Last-Name');
+  const email       = get('Email');
+  const telephone   = get('Telephone-Contact-including-country-code');
   const institution = get('Institution');
-  const street     = get('Street');
-  const city       = get('City-and-Zip-code');
-  const country    = get('Country');
-  const reference  = get('Reference');
-  const website    = get('Website');
+  const street      = get('Street');
+  const city        = get('City-and-Zip-code');
+  const country     = get('Country');
+  const reference   = get('Reference');
+  const website     = get('Website');
   const requestText = get('Request');
 
   if (!firstName || !lastName || !email || !telephone || !institution || !street || !city || !country || !requestText) {
@@ -91,8 +94,8 @@ export const POST: APIRoute = async ({ request }) => {
     `Telephone: ${telephone}`,
     `Institution: ${institution}`,
     `Address: ${street}, ${city}, ${country}`,
-    reference  ? `Reference: ${reference}` : '',
-    website    ? `Website: ${website}` : '',
+    reference   ? `Reference: ${reference}` : '',
+    website     ? `Website: ${website}` : '',
     `\nRequest:\n${requestText}`,
     checkedCategories.length ? `\nCategories: ${checkedCategories.join(', ')}` : '',
   ].filter(Boolean).join('\n');
@@ -117,4 +120,4 @@ export const POST: APIRoute = async ({ request }) => {
     console.error('Unexpected error:', err);
     return new Response(JSON.stringify({ error: 'Server error' }), { status: 500 });
   }
-};
+}
