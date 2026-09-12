@@ -2,7 +2,7 @@ export const config = { runtime: 'edge' };
 
 import { Resend } from 'resend';
 
-const RECIPIENT = 'archivum@schlemmer.org';
+const RECIPIENT = 'os.archivum@proton.me';
 const SENDER    = 'Authentication Form <form@schlemmer.org>';
 
 const CHECKBOXES = [
