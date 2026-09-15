@@ -129,6 +129,14 @@ import Layout from '../layouts/Layout.astro';
           <span>I declare the information provided is correct. *</span>
         </label>
 
+        <!-- honeypot: hidden from real users, bots fill it in -->
+        <div class="auth-form__hp" aria-hidden="true">
+          <label for="_hp">Leave this blank</label>
+          <input type="text" id="_hp" name="_hp" tabindex="-1" autocomplete="off" />
+        </div>
+        <!-- timestamp set on load by script below -->
+        <input type="hidden" name="_t" id="_t" />
+
         <button type="submit" class="btn-primary auth-form__submit" id="auth-submit">Submit</button>
 
       </form>
@@ -138,6 +146,8 @@ import Layout from '../layouts/Layout.astro';
         const submit = document.getElementById('auth-submit') as HTMLButtonElement;
         const success = document.getElementById('auth-success') as HTMLElement;
         const errorBox = document.getElementById('auth-error') as HTMLElement;
+
+        (document.getElementById('_t') as HTMLInputElement).value = String(Date.now());
 
         form.addEventListener('submit', async (e) => {
           e.preventDefault();
@@ -358,6 +368,15 @@ import Layout from '../layouts/Layout.astro';
   .auth-form__submit {
     align-self: flex-start;
     margin-top: 0.5rem;
+  }
+
+  .auth-form__hp {
+    position: absolute;
+    left: -9999px;
+    top: -9999px;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
   }
 
   @media (max-width: 767px) {

@@ -41,6 +41,17 @@ export default async function handler(req: Request): Promise<Response> {
 
   const get = (key: string) => (body.get(key) as string | null)?.trim() ?? '';
 
+  // Honeypot: bots fill hidden fields, humans don't
+  if (get('_hp') !== '') {
+    return new Response(JSON.stringify({ ok: true }), { status: 200 });
+  }
+
+  // Time check: bots submit too fast (< 3s from page load)
+  const ts = Number(get('_t'));
+  if (!ts || Date.now() - ts < 3000) {
+    return new Response(JSON.stringify({ ok: true }), { status: 200 });
+  }
+
   const firstName   = get('First-Name');
   const lastName    = get('Last-Name');
   const email       = get('Email');
