@@ -11,9 +11,9 @@ const html = readFileSync(resolve('src/data/html/imprint.html'), 'utf-8');
   description="Legal details, copyright information, and disclaimers."
   currentPath="/imprint"
 >
-  <section class="html-page">
+  <main class="html-page">
     <div set:html={html} />
-  </section>
+  </main>
 </Layout>
 
 <style>

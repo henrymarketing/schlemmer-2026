@@ -1,6 +1,6 @@
 ---
 ---
-<div id="lightbox" class="lightbox" role="dialog" aria-modal="true" aria-label="Image viewer">
+<div id="lightbox" class="lightbox" role="dialog" aria-modal="true" aria-label="Image viewer" aria-hidden="true">
   <button id="lightbox-close" aria-label="Close image viewer">×</button>
   <figure class="lightbox__figure">
     <img id="lightbox-img" src="" alt="" />
@@ -19,10 +19,12 @@
     lbImg.alt = alt;
     lbCap.textContent = caption;
     lb.classList.add('open');
+    lb.removeAttribute('aria-hidden');
     lbClose.focus();
   }
   function closeLightbox() {
     lb.classList.remove('open');
+    lb.setAttribute('aria-hidden', 'true');
   }
 
   document.addEventListener('click', (e) => {

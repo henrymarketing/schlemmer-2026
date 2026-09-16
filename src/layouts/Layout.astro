@@ -53,7 +53,7 @@ const fullTitle = title === 'Oskar Schlemmer' ? title : `${title} — Oskar Schl
   <body class="body-2">
     <a href="#main-content" class="skip-nav">Skip to main content</a>
     <Nav currentPath={currentPath} />
-    <div id="main-content" tabindex="-1"></div>
+    <span id="main-content" tabindex="-1" aria-hidden="true" style="position:absolute;width:0;height:0;overflow:hidden;outline:none"></span>
     <slot />
     <Footer />
     <Lightbox />
