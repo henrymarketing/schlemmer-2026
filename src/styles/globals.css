@@ -58,6 +58,31 @@
   }
 }
 
+/* Skip navigation link — visually hidden, shown on focus */
+.skip-nav {
+  position: absolute;
+  left: -9999px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  z-index: 9999;
+  padding: 0.75rem 1.5rem;
+  background: #fff;
+  color: #000;
+  font-size: 0.875rem;
+  font-weight: 600;
+  text-decoration: none;
+  white-space: nowrap;
+}
+.skip-nav:focus {
+  left: 1rem;
+  top: 1rem;
+  width: auto;
+  height: auto;
+  overflow: visible;
+}
+
 /* Nav overlay — full-screen */
 .nav-overlay {
   position: fixed;

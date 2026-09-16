@@ -35,13 +35,12 @@ const fullTitle = title === 'Oskar Schlemmer' ? title : `${title} — Oskar Schl
     <meta name="twitter:card" content="summary_large_image" />
     <link rel="shortcut icon" href="/favicon.jpg" type="image/jpeg" />
     <link rel="apple-touch-icon" href="/apple-touch-icon.jpg" />
-    <link rel="stylesheet" href="/webflow.css" />
+    <link rel="preload" href="/webflow.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+    <noscript><link rel="stylesheet" href="/webflow.css" /></noscript>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Questrial&display=swap"
-      rel="stylesheet"
-    />
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Questrial&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Questrial&display=swap" /></noscript>
     <!-- Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-8BS1KDTMSE"></script>
     <script>
@@ -52,7 +51,9 @@ const fullTitle = title === 'Oskar Schlemmer' ? title : `${title} — Oskar Schl
     </script>
   </head>
   <body class="body-2">
+    <a href="#main-content" class="skip-nav">Skip to main content</a>
     <Nav currentPath={currentPath} />
+    <div id="main-content" tabindex="-1"></div>
     <slot />
     <Footer />
     <Lightbox />
