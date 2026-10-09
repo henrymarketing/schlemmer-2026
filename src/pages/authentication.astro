@@ -90,6 +90,25 @@ import Layout from '../layouts/Layout.astro';
         </div>
 
         <div class="auth-form__field">
+          <label class="form-label" for="File-Transfer-Link">
+            File Transfer Link <span class="auth-form__note">(optional)</span>
+          </label>
+          <p class="auth-form__hint">
+            To share images or documents, upload them at
+            <a href="https://www.swisstransfer.com/en" target="_blank" rel="noopener noreferrer" class="auth-form__hint-link">SwissTransfer.com</a>
+            — set expiry to 7 days, then paste the link here.
+          </p>
+          <input
+            class="form-input"
+            type="url"
+            id="File-Transfer-Link"
+            name="File-Transfer-Link"
+            maxlength="512"
+            placeholder="https://www.swisstransfer.com/d/…"
+          />
+        </div>
+
+        <div class="auth-form__field">
           <label class="form-label" for="Request">Type of Request *</label>
           <textarea
             class="form-input auth-form__textarea"
@@ -328,6 +347,25 @@ import Layout from '../layouts/Layout.astro';
     color: rgba(255, 255, 255, 0.4);
     text-transform: none;
     font-weight: 400;
+  }
+
+  .auth-form__hint {
+    font-size: 0.72rem;
+    line-height: 1.6;
+    color: rgba(255, 255, 255, 0.45);
+    margin: 0 0 0.5rem;
+  }
+
+  .auth-form__hint-link {
+    color: rgba(255, 255, 255, 0.65);
+    text-decoration: underline;
+    text-underline-offset: 2px;
+    text-decoration-color: rgba(255, 255, 255, 0.3);
+  }
+
+  .auth-form__hint-link:hover {
+    color: #fff;
+    text-decoration-color: rgba(255, 255, 255, 0.7);
   }
 
   .auth-form__textarea {

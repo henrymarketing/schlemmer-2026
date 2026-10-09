@@ -62,6 +62,7 @@ export default async function handler(req: Request): Promise<Response> {
   const country     = get('Country');
   const reference   = get('Reference');
   const website     = get('Website');
+  const fileLink    = get('File-Transfer-Link');
   const requestText = get('Request');
 
   if (!firstName || !lastName || !email || !telephone || !institution || !street || !city || !country || !requestText) {
@@ -91,6 +92,8 @@ export default async function handler(req: Request): Promise<Response> {
       <td style="padding:4px 0">${reference}</td></tr>` : ''}
   ${website ? `<tr><td style="padding:4px 16px 4px 0;font-weight:bold;white-space:nowrap">Website</td>
       <td style="padding:4px 0"><a href="${website}">${website}</a></td></tr>` : ''}
+  ${fileLink ? `<tr><td style="padding:4px 16px 4px 0;font-weight:bold;white-space:nowrap">Files</td>
+      <td style="padding:4px 0"><a href="${fileLink}">${fileLink}</a></td></tr>` : ''}
   <tr><td style="padding:12px 16px 4px 0;font-weight:bold;vertical-align:top;white-space:nowrap">Request</td>
       <td style="padding:12px 0 4px;white-space:pre-wrap">${requestText}</td></tr>
   ${checkedCategories.length ? `<tr><td style="padding:12px 16px 4px 0;font-weight:bold;vertical-align:top;white-space:nowrap">Categories</td>
@@ -107,6 +110,7 @@ export default async function handler(req: Request): Promise<Response> {
     `Address: ${street}, ${city}, ${country}`,
     reference   ? `Reference: ${reference}` : '',
     website     ? `Website: ${website}` : '',
+    fileLink    ? `File Transfer Link: ${fileLink}` : '',
     `\nRequest:\n${requestText}`,
     checkedCategories.length ? `\nCategories: ${checkedCategories.join(', ')}` : '',
   ].filter(Boolean).join('\n');
