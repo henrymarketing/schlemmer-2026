@@ -1,0 +1,159 @@
+---
+import Layout from '../layouts/Layout.astro';
+
+const groups = [
+  {
+    heading: 'Explore',
+    links: [
+      { href: '/oskar-schlemmer', label: 'Oskar Schlemmer, Work and Life' },
+      { href: '/triadic-ballet', label: 'The Triadic Ballet' },
+      { href: '/catalogue-raisonne', label: 'Catalogue Raisonné' },
+      { href: '/communique', label: 'News & Communiqué' },
+    ],
+  },
+  {
+    heading: 'Contact',
+    links: [
+      { href: '/authentication', label: 'Authentication Enquiries' },
+    ],
+  },
+  {
+    heading: 'Get Involved',
+    links: [
+      {
+        href: 'https://www.change.org/p/save-the-oskar-schlemmer-studio-for-future-generations-313bb710-4a95-4cb7-9dbf-8523c3871c32',
+        label: 'Save the Oskar Schlemmer Studio — Petition',
+        external: true,
+      },
+      {
+        href: 'https://mint.schlemmer.org/',
+        label: 'Bauhaus Signet — Mint',
+        external: true,
+      },
+    ],
+  },
+];
+---
+
+<Layout
+  title="Links"
+  description="Essential links and contact for The Oskar Schlemmer Theatre Archives."
+  currentPath="/linktree"
+>
+  <main class="linktree">
+    <div class="linktree__inner">
+      <h1 class="linktree__title">The Oskar Schlemmer Theatre Archives</h1>
+      <p class="linktree__subtitle">Bauhaus master — painter, sculptor, choreographer.</p>
+
+      {groups.map(({ heading, links }) => (
+        <section class="linktree__group">
+          <h2 class="linktree__heading">{heading}</h2>
+          <ul class="linktree__list">
+            {links.map(({ href, label, external }) => (
+              <li>
+                <a
+                  href={href}
+                  class="linktree__link"
+                  {...(external ? { target: '_blank', rel: 'noopener noreferrer' } : {})}
+                >
+                  <span>{label}</span>
+                  {external && (
+                    <>
+                      <span class="linktree__icon" aria-hidden="true">↗</span>
+                      <span class="linktree__sr">(opens in a new tab)</span>
+                    </>
+                  )}
+                </a>
+              </li>
+            ))}
+          </ul>
+        </section>
+      ))}
+    </div>
+  </main>
+</Layout>
+
+<style>
+  .linktree {
+    background: #000;
+    color: #fff;
+    font-family: "Century Gothic", "Questrial", ui-sans-serif, sans-serif;
+    padding: 3rem 1.25rem 6rem;
+  }
+
+  .linktree__inner {
+    max-width: 40rem;
+    margin: 0 auto;
+  }
+
+  .linktree__title {
+    margin: 0;
+    font-size: clamp(1.5rem, 4vw, 2.25rem);
+    font-weight: 300;
+    line-height: 1.25;
+    color: #fff;
+  }
+
+  .linktree__subtitle {
+    margin: 0.75rem 0 0;
+    font-size: 1rem;
+    color: rgba(255, 255, 255, 0.7);
+  }
+
+  .linktree__group {
+    margin-top: 2.75rem;
+  }
+
+  .linktree__heading {
+    margin: 0 0 0.75rem;
+    font-size: 0.8125rem;
+    font-weight: 400;
+    line-height: 1.4;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.7);
+  }
+
+  .linktree__list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.25);
+  }
+
+  .linktree__list li {
+    margin: 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+  }
+
+  .linktree__link {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    min-height: 3.5rem;
+    padding: 0.75rem 0;
+    font-size: 1.0625rem;
+    line-height: 1.35;
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.2s;
+  }
+
+  .linktree__link:hover {
+    color: rgba(255, 255, 255, 0.6);
+  }
+
+  .linktree__icon {
+    flex-shrink: 0;
+  }
+
+  .linktree__sr {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip-path: inset(50%);
+    white-space: nowrap;
+  }
+</style>
