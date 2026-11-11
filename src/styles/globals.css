@@ -3,7 +3,7 @@
 
 @theme {
   /* Typeface — Questrial is the closest open-source match to Century Gothic */
-  --font-family-sans: var(--font-questrial, "Century Gothic", "ITC Avant Garde Gothic", ui-sans-serif, system-ui, sans-serif);
+  --font-family-sans: "Century Gothic", "Futura", "Questrial", "ITC Avant Garde Gothic", ui-sans-serif, system-ui, sans-serif;
 
   /* Palette — dark by default */
   --color-background: #0a0a0a;
