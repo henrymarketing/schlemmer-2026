@@ -151,7 +151,7 @@ import Layout from '../layouts/Layout.astro';
   .hero__ctas {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: flex-end;
     gap: 1rem;
   }
 
@@ -206,6 +206,10 @@ import Layout from '../layouts/Layout.astro';
     .hero__more {
       width: calc(100% - 2.5rem);
       padding: 2rem 0 3rem;
+    }
+
+    .hero__ctas {
+      justify-content: center;
     }
 
     .hero__images {
