@@ -47,12 +47,15 @@ import Layout from '../layouts/Layout.astro';
           In collaboration with the National Gallery of Zimbabwe Harare Conversations<br>
           This is an in-person event and will not be available online
         </p>
-        <div class="hero__ctas">
-          <a href="/slideshow" class="hero__btn">› View Works</a>
-          <a href="https://mint.schlemmer.org" target="_blank" rel="noopener noreferrer" class="hero__btn hero__btn--outline">› Mint a Bauhaus Signet</a>
-        </div>
       </div>
 
+    </div>
+
+    <div class="hero__more">
+      <div class="hero__ctas">
+        <a href="/slideshow" class="hero__btn">› View Works</a>
+        <a href="https://mint.schlemmer.org" target="_blank" rel="noopener noreferrer" class="hero__btn hero__btn--outline">› Mint a Bauhaus Signet</a>
+      </div>
     </div>
   </main>
 </Layout>
@@ -62,14 +65,15 @@ import Layout from '../layouts/Layout.astro';
     background: #000;
     min-height: calc(100vh - 5rem);
     display: flex;
-    align-items: center;
+    flex-direction: column;
+    justify-content: center;
   }
 
   .hero__inner {
     width: 100%;
     max-width: 1100px;
     margin: 0 auto;
-    padding: 4rem 3rem;
+    padding: 4rem 3rem 3.5rem;
     display: flex;
     align-items: center;
     gap: 4rem;
@@ -135,11 +139,20 @@ import Layout from '../layouts/Layout.astro';
     max-width: 52ch;
   }
 
+  /* ─── Separate links below the news entry ── */
+  .hero__more {
+    width: calc(100% - 6rem);
+    max-width: calc(1100px - 6rem);
+    margin: 0 auto;
+    padding: 2.5rem 0 4rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.18);
+  }
+
   .hero__ctas {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     gap: 1rem;
-    margin-bottom: 1.5rem;
   }
 
   .hero__btn {
@@ -186,8 +199,13 @@ import Layout from '../layouts/Layout.astro';
 
     .hero__inner {
       flex-direction: column-reverse;
-      padding: 2.5rem 1.25rem 3rem;
+      padding: 2.5rem 1.25rem 2.5rem;
       gap: 2rem;
+    }
+
+    .hero__more {
+      width: calc(100% - 2.5rem);
+      padding: 2rem 0 3rem;
     }
 
     .hero__images {
