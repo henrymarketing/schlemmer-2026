@@ -4,54 +4,53 @@ import Layout from '../layouts/Layout.astro';
 
 <Layout
   title="Oskar Schlemmer"
-  description="Oskar Schlemmer was a German painter, sculptor, designer and choreographer associated with the Bauhaus school."
-  ogImage="/images/OS-DTB-as-Dancer-turkish-Photo-DO01179.jpg"
+  description="A lecture by C. Raman Schlemmer on Oskar Schlemmer — artist, choreographer and Bauhaus Master — at the National Gallery of Zimbabwe, Harare, 27 November 2026."
+  ogImage="/images/harare-lecture-flyer-og.jpg"
   currentPath="/"
 >
   <main class="hero">
     <div class="hero__inner">
 
       <div class="hero__images">
-        <img
-          src="/images/OS-DTB-as-Dancer-turkish-Photo-DO01179.jpg"
-          alt="Oskar Schlemmer as Dancer in The Triadic Ballet, Turkish Suite"
-          class="hero__dancer"
-          width="190"
-          height="279"
-          loading="eager"
-          fetchpriority="high"
-        />
-        <div class="hero__image-sep"></div>
-        <a href="https://mint.schlemmer.org" target="_blank" rel="noopener noreferrer" class="hero__signet-link">
+        <a href="/images/harare-lecture-flyer-1600.webp" target="_blank" rel="noopener" class="hero__flyer-link">
           <img
-            src="/images/oskar-schlemmer-bauhaus-logo.png"
-            alt="Oskar Schlemmer — Bauhaus Signet, 1922–1923"
-            class="hero__signet"
-            width="1704"
-            height="1706"
+            src="/images/harare-lecture-flyer-1000.webp"
+            srcset="/images/harare-lecture-flyer-600.webp 600w, /images/harare-lecture-flyer-1000.webp 1000w, /images/harare-lecture-flyer-1600.webp 1600w"
+            sizes="(max-width: 767px) 90vw, 420px"
+            alt="Lecture flyer: Oskar Schlemmer — The Dancing Artist + The Bauhaus. Guest lecture by C. Raman Schlemmer, 27 November 2026, 10–13 o'clock, National Gallery of Zimbabwe, 20 Julius Nyerere Way, Harare. Harare Conversations."
+            class="hero__flyer"
+            width="1000"
+            height="1414"
             loading="eager"
+            fetchpriority="high"
           />
         </a>
       </div>
 
       <div class="hero__text">
-        <p class="hero__date">4 September 2026</p>
+        <p class="hero__date">27 November 2026 &middot; National Gallery of Zimbabwe, Harare</p>
         <h1 class="hero__heading">
-          Birthday anniversary of<br>Oskar Schlemmer<br>(1888&thinsp;&ndash;&thinsp;1943)
+          A lecture on<br>Oskar Schlemmer<br>(1888&thinsp;&ndash;&thinsp;1943)
         </h1>
         <p class="hero__body">
-          On the occasion of his birthday, join C.&nbsp;Raman Schlemmer to remember his grandfather
-          Oskar Schlemmer, whose pioneering&nbsp;œuvre crossed the boundaries of painting, sculpture,
-          theatre, dance and design. His vision of the human figure in space, most famously realised
-          in the dance performance&nbsp;"The Triadic Ballet" (1922), the "Bauhaus Dances", the painting
-          "Bauhaus Staircase" (1932), and noted in his diaries and writings, remains an enduring
-          contribution to modern art.
+          A lecture by C.&nbsp;Raman Schlemmer at the National Gallery of Zimbabwe, Harare, on
+          27&nbsp;November&nbsp;2026. Possibly the first lecture in Africa devoted to the life and work
+          of Oskar Schlemmer, the artist, choreographer and Bauhaus Master.
+        </p>
+        <p class="hero__body">
+          Conceived as a personal educational contribution to students, artists and the wider cultural
+          community in Zimbabwe, this initiative is offered by C.&nbsp;Raman Schlemmer in the spirit of
+          sharing knowledge, oral history and first-hand insights into the legacy of Oskar Schlemmer
+          with new audiences internationally.
+        </p>
+        <p class="hero__note">
+          In collaboration with the National Gallery of Zimbabwe Harare Conversations<br>
+          This is an in-person event and will not be available online
         </p>
         <div class="hero__ctas">
           <a href="/slideshow" class="hero__btn">› View Works</a>
           <a href="https://mint.schlemmer.org" target="_blank" rel="noopener noreferrer" class="hero__btn hero__btn--outline">› Mint a Bauhaus Signet</a>
         </div>
-        <p class="hero__caption">Oskar Schlemmer / Jaïna Schlemmer</p>
       </div>
 
     </div>
@@ -85,31 +84,15 @@ import Layout from '../layouts/Layout.astro';
     gap: 2rem;
   }
 
-  .hero__dancer {
+  .hero__flyer-link {
+    display: block;
+  }
+
+  .hero__flyer {
+    width: auto;
     max-width: 100%;
-    max-height: 65vh;
-    object-fit: contain;
-    display: block;
-  }
-
-  .hero__image-sep {
-    width: 60%;
-    height: 1px;
-    background: rgba(255, 255, 255, 0.12);
-  }
-
-  .hero__signet-link {
-    display: block;
-    opacity: 0.85;
-    transition: opacity 0.2s;
-  }
-
-  .hero__signet-link:hover {
-    opacity: 1;
-  }
-
-  .hero__signet {
-    width: 140px;
+    max-height: 80vh;
+    height: auto;
     display: block;
   }
 
@@ -139,8 +122,17 @@ import Layout from '../layouts/Layout.astro';
     font-size: 0.9rem;
     line-height: 1.8;
     color: rgba(255, 255, 255, 0.7);
-    margin: 0 0 2rem;
+    margin: 0 0 1.25rem;
     max-width: 46ch;
+  }
+
+  .hero__note {
+    font-size: 0.75rem;
+    line-height: 1.7;
+    letter-spacing: 0.02em;
+    color: rgba(255, 255, 255, 0.5);
+    margin: 0 0 2rem;
+    max-width: 52ch;
   }
 
   .hero__ctas {
@@ -207,17 +199,10 @@ import Layout from '../layouts/Layout.astro';
       gap: 1.5rem;
     }
 
-    .hero__dancer {
-      max-height: 52vw;
-      max-width: 55%;
-    }
-
-    .hero__image-sep {
-      display: none;
-    }
-
-    .hero__signet {
-      width: 80px;
+    .hero__flyer {
+      max-height: none;
+      width: 100%;
+      max-width: 420px;
     }
 
     .hero__heading {
